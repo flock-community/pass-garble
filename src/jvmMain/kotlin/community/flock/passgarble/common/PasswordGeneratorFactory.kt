@@ -1,10 +1,8 @@
 package community.flock.passgarble.common
 
-import java.time.Instant
-
 actual object PasswordGeneratorFactory {
-    actual fun createGenerator(): PasswordGenerator {
+    actual fun createGenerator(): CommonPasswordGenerator {
 //        return PasswordGenerator(Instant.now().epochSecond)
-        return PasswordGenerator(-1L)
+        return CommonPasswordGenerator(-1L)
     }
 }
