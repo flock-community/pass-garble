@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "community.flock.pass-garble"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -54,25 +54,20 @@ kotlin {
 //        }
 //    }
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
             }
         }
-        val jvmMain by getting
+        val jvmMain by getting {
+
+        }
         val jvmTest by getting
         val jsMain by getting {
             dependencies {
-//                implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.264-kotlin-1.5.31")
-//                implementation("org.jetbrains.kotlin-wrappers:kotlin-react-dom:17.0.2-pre.264-kotlin-1.5.31")
-//                implementation("org.jetbrains.kotlin-wrappers:kotlin-styled:5.3.3-pre.264-kotlin-1.5.31")
-//                implementation(npm("styled-components", "~5.3.3"))
-
-
-                //React, React DOM + Wrappers (chapter 3)
-//                implementation(npm("react", "17.0.2"))
-//                implementation(npm("react-dom", "17.0.2"))
             }
         }
         val jsTest by getting
@@ -87,7 +82,7 @@ kotlin {
 
 npmPublishing {
     dry  = true
-//    organization = ""
+    organization = "flock"
     repositories {
         repository("npmjs") {
             registry = uri("https://registry.npmjs.org")
