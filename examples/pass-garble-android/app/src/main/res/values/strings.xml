@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Pass Garble android</string>
+    <string name="welcome">Welcome!</string>
+    <string name="title">"Pass garble Android"</string>
+    <string name="subtitle">a Kotlin Multiplatform password generator implementation in Android</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- -->
+    <string name="prompt_generated_password">A generated password</string>
+    <string name="action_generate_password">Generate password</string>
+    <string name="action_copy_password">Copy password</string>
+
+    <!-- Input fields -->
+    <string name="input_password_length">password length</string>
+    <string name="default_password_length">10</string>
+    <string name="checkbox_lowercase_characters">Include lowercase</string>
+    <string name="checkbox_uppercase_characters">Include uppercase</string>
+    <string name="checkbox_numbers">Include number</string>
+    <string name="checkbox_special_characters">Include special characters</string>
+</resources>
