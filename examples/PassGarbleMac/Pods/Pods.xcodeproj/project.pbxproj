@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		459AB7C72209E385C169566910C84093 /* PassGarble */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 88520166E6F7EAA827A9968D38AA55A7 /* Build configuration list for PBXAggregateTarget "PassGarble" */;
+			buildPhases = (
+				30564B8D9D0C1BD96B57C0B0C2FEFCD9 /* [CP-User] Build PassGarble */,
+			);
+			dependencies = (
+			);
+			name = PassGarble;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		12B541962E8044CC260447808CD5E697 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 778638C841536088121199633DA10F33 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A015A4917A379014159DA9DA9E4A1B5 /* Pods-PassGarbleMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4CA245390E5A5317B7E2F98574C345 /* Pods-PassGarbleMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4091CC4CA16113BDA1093C63467F6A22 /* Pods-PassGarbleMacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CCB69C5E8EBF8D4ACA86E020A82E39 /* Pods-PassGarbleMacTests-dummy.m */; };
+		60F67670D6CB76AD2AED7305FBB88E7D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		6C706AD500753F441310C95C9BFD0C3C /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EA60EA13B213B0DE9F07A423194974 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */; };
+		7FBBB99DC91B938519C014341E42171D /* Pods-PassGarbleMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B414B4F07F378D6255923AEEA720AF3D /* Pods-PassGarbleMac-dummy.m */; };
+		8502F154699B5E02267D6328F79D6559 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		F3F1C958E73560D1D2A4ABCB87486C30 /* Pods-PassGarbleMacTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF51898FE2FF1450A3472FDFEE98730 /* Pods-PassGarbleMacTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F87523969C092681408578C2AE38D98F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DB2A5C61F3C7DD51D17B8A85665E688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459AB7C72209E385C169566910C84093;
+			remoteInfo = PassGarble;
+		};
+		B542B0A4A8D747BA72B9FBC553C1A14E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 459AB7C72209E385C169566910C84093;
+			remoteInfo = PassGarble;
+		};
+		E1F0C54F9FDF7E54DEDF111516BCBF5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A79D67C5BA15E5BB907D5A2C134289B3;
+			remoteInfo = "Pods-PassGarbleMac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF51898FE2FF1450A3472FDFEE98730 /* Pods-PassGarbleMacTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMacTests-umbrella.h"; sourceTree = "<group>"; };
+		1FB5B11ED93889096AA13EDA24658099 /* Pods-PassGarbleMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMac.modulemap"; sourceTree = "<group>"; };
+		2EE2330A42F1166B70CC8019F0695EB6 /* Pods-PassGarbleMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMacTests.release.xcconfig"; sourceTree = "<group>"; };
+		3EAB80D5F8FCB4E729960A730BEAC118 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		425EF8A2D64F2F50216554FB39CCE88D /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		471295A6121812154AA4EFB22C56E8D1 /* Pods-PassGarbleMac-PassGarbleMacUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMac-PassGarbleMacUITests.modulemap"; sourceTree = "<group>"; };
+		471C8D13F220258CEA283330AD93D9DC /* Pods-PassGarbleMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac.debug.xcconfig"; sourceTree = "<group>"; };
+		50F991233FA7F6DB52246D7FF080FB92 /* Pods-PassGarbleMac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-Info.plist"; sourceTree = "<group>"; };
+		53BE3B3FCE077B2780891BE4FB4B0B14 /* Pods-PassGarbleMacTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMacTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54CCB69C5E8EBF8D4ACA86E020A82E39 /* Pods-PassGarbleMacTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMacTests-dummy.m"; sourceTree = "<group>"; };
+		59AF650FA3FD37B8E7EB6996CF404227 /* Pods-PassGarbleMac */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PassGarbleMac"; path = Pods_PassGarbleMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D4573A050193AB4D2167E7A72536D4 /* PassGarble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PassGarble.release.xcconfig; sourceTree = "<group>"; };
+		62E28570F94A8F6487C22F20C31CE22B /* Pods-PassGarbleMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AE29829F250DB6A2083D4D6544E373E /* Pods-PassGarbleMac-PassGarbleMacUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PassGarbleMac-PassGarbleMacUITests-frameworks.sh"; sourceTree = "<group>"; };
+		778638C841536088121199633DA10F33 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h"; sourceTree = "<group>"; };
+		7AAA1D15D3F867DFED9F8D51DB75A05B /* Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist"; sourceTree = "<group>"; };
+		840025EFF088BE6965DC16C6A03920AB /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94235787EA6652DF5B52340D4166E3A9 /* Pods-PassGarbleMacTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMacTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D879A59813015A2A64478510BBE1C52 /* Pods-PassGarbleMac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PassGarbleMac-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB4CA245390E5A5317B7E2F98574C345 /* Pods-PassGarbleMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMac-umbrella.h"; sourceTree = "<group>"; };
+		B13A6ACC34A194294B7C4C7C3750F214 /* Pods-PassGarbleMacTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMacTests.modulemap"; sourceTree = "<group>"; };
+		B414B4F07F378D6255923AEEA720AF3D /* Pods-PassGarbleMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMac-dummy.m"; sourceTree = "<group>"; };
+		B683CA8D0EBF8C4E6ED358370517C8C3 /* Pods-PassGarbleMacTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PassGarbleMacTests"; path = Pods_PassGarbleMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79B6D1401BB3038A6FF023FC27825AE /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		CDFD05FA014A4AB3F3116297A82F0F35 /* Pods-PassGarbleMac-PassGarbleMacUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PassGarbleMac-PassGarbleMacUITests"; path = Pods_PassGarbleMac_PassGarbleMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E7029EF669ADCF90BD2BA94B59EC1A /* PassGarble.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PassGarble.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8C945194E5458190B30EF33C1F95BD6 /* PassGarble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PassGarble.debug.xcconfig; sourceTree = "<group>"; };
+		DA432D4CA74A4113C8081C017F80C38C /* Pods-PassGarbleMacTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMacTests-Info.plist"; sourceTree = "<group>"; };
+		DD78DE0438DE82F1D195C7B4A66223E8 /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DFDA83ED9B0649B6888ECD08A5D7B02E /* Pods-PassGarbleMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac.release.xcconfig"; sourceTree = "<group>"; };
+		E1EA60EA13B213B0DE9F07A423194974 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m"; sourceTree = "<group>"; };
+		E3EB66747871CFBCBF6560C424113580 /* Pods-PassGarbleMac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMac-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB8B22BE8DB7C780A4B22C6A38012D35 /* PassGarble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassGarble.framework; path = build/cocoapods/framework/PassGarble.framework; sourceTree = "<group>"; };
+		F987C6B46107F8F19D55A7CC3BA8F152 /* Pods-PassGarbleMac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B69960A39EE29B9613FFD5F8F3AD65E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87523969C092681408578C2AE38D98F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3572AF64E7DF97F1F59EB54231B8CE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8502F154699B5E02267D6328F79D6559 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7772CB9861D8D07571F2B3FB95FFEC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F67670D6CB76AD2AED7305FBB88E7D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FA85A13B3E96DCBBB2BE851C1D5AB9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8C945194E5458190B30EF33C1F95BD6 /* PassGarble.debug.xcconfig */,
+				60D4573A050193AB4D2167E7A72536D4 /* PassGarble.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "examples/PassGarbleMac/Pods/Target Support Files/PassGarble";
+			sourceTree = "<group>";
+		};
+		07577444B6FF1B9FE27E1B7FB65F65DF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78EE5C79D615F80A842523478E9C4EB9 /* Pods-PassGarbleMac */,
+				5D8006DF3BC8E192592676078A74BC85 /* Pods-PassGarbleMac-PassGarbleMacUITests */,
+				52839073E04B44CED7BFA6099B5492AE /* Pods-PassGarbleMacTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		07A1AB17E9EBE95754E1F7231E9A758A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59AF650FA3FD37B8E7EB6996CF404227 /* Pods-PassGarbleMac */,
+				CDFD05FA014A4AB3F3116297A82F0F35 /* Pods-PassGarbleMac-PassGarbleMacUITests */,
+				B683CA8D0EBF8C4E6ED358370517C8C3 /* Pods-PassGarbleMacTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E275F94C218D345D665F1094C00BE37 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F42AE5EE91EE0226FD40974BEDEA41C4 /* PassGarble */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		52839073E04B44CED7BFA6099B5492AE /* Pods-PassGarbleMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				B13A6ACC34A194294B7C4C7C3750F214 /* Pods-PassGarbleMacTests.modulemap */,
+				53BE3B3FCE077B2780891BE4FB4B0B14 /* Pods-PassGarbleMacTests-acknowledgements.markdown */,
+				94235787EA6652DF5B52340D4166E3A9 /* Pods-PassGarbleMacTests-acknowledgements.plist */,
+				54CCB69C5E8EBF8D4ACA86E020A82E39 /* Pods-PassGarbleMacTests-dummy.m */,
+				DA432D4CA74A4113C8081C017F80C38C /* Pods-PassGarbleMacTests-Info.plist */,
+				0CF51898FE2FF1450A3472FDFEE98730 /* Pods-PassGarbleMacTests-umbrella.h */,
+				62E28570F94A8F6487C22F20C31CE22B /* Pods-PassGarbleMacTests.debug.xcconfig */,
+				2EE2330A42F1166B70CC8019F0695EB6 /* Pods-PassGarbleMacTests.release.xcconfig */,
+			);
+			name = "Pods-PassGarbleMacTests";
+			path = "Target Support Files/Pods-PassGarbleMacTests";
+			sourceTree = "<group>";
+		};
+		5D8006DF3BC8E192592676078A74BC85 /* Pods-PassGarbleMac-PassGarbleMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				471295A6121812154AA4EFB22C56E8D1 /* Pods-PassGarbleMac-PassGarbleMacUITests.modulemap */,
+				B79B6D1401BB3038A6FF023FC27825AE /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown */,
+				DD78DE0438DE82F1D195C7B4A66223E8 /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist */,
+				E1EA60EA13B213B0DE9F07A423194974 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */,
+				6AE29829F250DB6A2083D4D6544E373E /* Pods-PassGarbleMac-PassGarbleMacUITests-frameworks.sh */,
+				7AAA1D15D3F867DFED9F8D51DB75A05B /* Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist */,
+				778638C841536088121199633DA10F33 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */,
+				840025EFF088BE6965DC16C6A03920AB /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */,
+				425EF8A2D64F2F50216554FB39CCE88D /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */,
+			);
+			name = "Pods-PassGarbleMac-PassGarbleMacUITests";
+			path = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests";
+			sourceTree = "<group>";
+		};
+		78EE5C79D615F80A842523478E9C4EB9 /* Pods-PassGarbleMac */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5B11ED93889096AA13EDA24658099 /* Pods-PassGarbleMac.modulemap */,
+				E3EB66747871CFBCBF6560C424113580 /* Pods-PassGarbleMac-acknowledgements.markdown */,
+				F987C6B46107F8F19D55A7CC3BA8F152 /* Pods-PassGarbleMac-acknowledgements.plist */,
+				B414B4F07F378D6255923AEEA720AF3D /* Pods-PassGarbleMac-dummy.m */,
+				9D879A59813015A2A64478510BBE1C52 /* Pods-PassGarbleMac-frameworks.sh */,
+				50F991233FA7F6DB52246D7FF080FB92 /* Pods-PassGarbleMac-Info.plist */,
+				AB4CA245390E5A5317B7E2F98574C345 /* Pods-PassGarbleMac-umbrella.h */,
+				471C8D13F220258CEA283330AD93D9DC /* Pods-PassGarbleMac.debug.xcconfig */,
+				DFDA83ED9B0649B6888ECD08A5D7B02E /* Pods-PassGarbleMac.release.xcconfig */,
+			);
+			name = "Pods-PassGarbleMac";
+			path = "Target Support Files/Pods-PassGarbleMac";
+			sourceTree = "<group>";
+		};
+		A36817B5E1F783554305CE20C9EACA09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B22BE8DB7C780A4B22C6A38012D35 /* PassGarble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				0E275F94C218D345D665F1094C00BE37 /* Development Pods */,
+				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
+				07A1AB17E9EBE95754E1F7231E9A758A /* Products */,
+				07577444B6FF1B9FE27E1B7FB65F65DF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		F42AE5EE91EE0226FD40974BEDEA41C4 /* PassGarble */ = {
+			isa = PBXGroup;
+			children = (
+				A36817B5E1F783554305CE20C9EACA09 /* Frameworks */,
+				FE9E18CCC5E01908F4540B76C9911A7C /* Pod */,
+				04FA85A13B3E96DCBBB2BE851C1D5AB9 /* Support Files */,
+			);
+			name = PassGarble;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		FE9E18CCC5E01908F4540B76C9911A7C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D3E7029EF669ADCF90BD2BA94B59EC1A /* PassGarble.podspec */,
+				3EAB80D5F8FCB4E729960A730BEAC118 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0995776B604E7C9E9ACEACC82E9F12A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B541962E8044CC260447808CD5E697 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818819ACF7DB8753EAA62E391A852A16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A015A4917A379014159DA9DA9E4A1B5 /* Pods-PassGarbleMac-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72ABAC19CAC54B63C821CB556011181 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F1C958E73560D1D2A4ABCB87486C30 /* Pods-PassGarbleMacTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2449A913072CE51937735AB02D573854 /* Pods-PassGarbleMac-PassGarbleMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04B5E694699E1AF7D85F1E17DBCC7C8 /* Build configuration list for PBXNativeTarget "Pods-PassGarbleMac-PassGarbleMacUITests" */;
+			buildPhases = (
+				0995776B604E7C9E9ACEACC82E9F12A0 /* Headers */,
+				3E9E12D7A10F637B5EA4FB6D9867791F /* Sources */,
+				B69960A39EE29B9613FFD5F8F3AD65E6 /* Frameworks */,
+				AB7D21AD92C13CAB4E442EC20F70A832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98024063D74B6F9AA1C1B792C37169F /* PBXTargetDependency */,
+			);
+			name = "Pods-PassGarbleMac-PassGarbleMacUITests";
+			productName = Pods_PassGarbleMac_PassGarbleMacUITests;
+			productReference = CDFD05FA014A4AB3F3116297A82F0F35 /* Pods-PassGarbleMac-PassGarbleMacUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		396ABCE48CCB870C50BDB09CE37AE622 /* Pods-PassGarbleMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D47D686647A05F2A3715A88047212FA /* Build configuration list for PBXNativeTarget "Pods-PassGarbleMacTests" */;
+			buildPhases = (
+				F72ABAC19CAC54B63C821CB556011181 /* Headers */,
+				A87CCFE27823E80934F6E424A9E48172 /* Sources */,
+				C3572AF64E7DF97F1F59EB54231B8CE1 /* Frameworks */,
+				AEA28D401F8B52E01ACB9105E4BC089C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				497644AFC18EA3E99859DDA030EF4F8C /* PBXTargetDependency */,
+			);
+			name = "Pods-PassGarbleMacTests";
+			productName = Pods_PassGarbleMacTests;
+			productReference = B683CA8D0EBF8C4E6ED358370517C8C3 /* Pods-PassGarbleMacTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		A79D67C5BA15E5BB907D5A2C134289B3 /* Pods-PassGarbleMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228DA9CB062A6F29BB62417F49B7F924 /* Build configuration list for PBXNativeTarget "Pods-PassGarbleMac" */;
+			buildPhases = (
+				818819ACF7DB8753EAA62E391A852A16 /* Headers */,
+				AB8CF703798F69E5AEEFB8B74B14AE1E /* Sources */,
+				F7772CB9861D8D07571F2B3FB95FFEC0 /* Frameworks */,
+				4C7F5D5BCA1B401DAE0B67246AC019F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12A3A102A2ED49F278755FB911D5627 /* PBXTargetDependency */,
+			);
+			name = "Pods-PassGarbleMac";
+			productName = Pods_PassGarbleMac;
+			productReference = 59AF650FA3FD37B8E7EB6996CF404227 /* Pods-PassGarbleMac */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 07A1AB17E9EBE95754E1F7231E9A758A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				459AB7C72209E385C169566910C84093 /* PassGarble */,
+				A79D67C5BA15E5BB907D5A2C134289B3 /* Pods-PassGarbleMac */,
+				2449A913072CE51937735AB02D573854 /* Pods-PassGarbleMac-PassGarbleMacUITests */,
+				396ABCE48CCB870C50BDB09CE37AE622 /* Pods-PassGarbleMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C7F5D5BCA1B401DAE0B67246AC019F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7D21AD92C13CAB4E442EC20F70A832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEA28D401F8B52E01ACB9105E4BC089C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30564B8D9D0C1BD96B57C0B0C2FEFCD9 /* [CP-User] Build PassGarble */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Build PassGarble";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E9E12D7A10F637B5EA4FB6D9867791F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C706AD500753F441310C95C9BFD0C3C /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87CCFE27823E80934F6E424A9E48172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4091CC4CA16113BDA1093C63467F6A22 /* Pods-PassGarbleMacTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB8CF703798F69E5AEEFB8B74B14AE1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBBB99DC91B938519C014341E42171D /* Pods-PassGarbleMac-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		497644AFC18EA3E99859DDA030EF4F8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PassGarbleMac";
+			target = A79D67C5BA15E5BB907D5A2C134289B3 /* Pods-PassGarbleMac */;
+			targetProxy = E1F0C54F9FDF7E54DEDF111516BCBF5B /* PBXContainerItemProxy */;
+		};
+		A12A3A102A2ED49F278755FB911D5627 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PassGarble;
+			target = 459AB7C72209E385C169566910C84093 /* PassGarble */;
+			targetProxy = 0DB2A5C61F3C7DD51D17B8A85665E688 /* PBXContainerItemProxy */;
+		};
+		D98024063D74B6F9AA1C1B792C37169F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PassGarble;
+			target = 459AB7C72209E385C169566910C84093 /* PassGarble */;
+			targetProxy = B542B0A4A8D747BA72B9FBC553C1A14E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0157D29CDA2394A1F4FBC5E344B196DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425EF8A2D64F2F50216554FB39CCE88D /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14F3DEE0E1C718DABBB59567B89429A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDA83ED9B0649B6888ECD08A5D7B02E /* Pods-PassGarbleMac.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		547BE90B7910182E1A6E4697BCD52A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C945194E5458190B30EF33C1F95BD6 /* PassGarble.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6F5921CD61F17924958750690F0A5675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E28570F94A8F6487C22F20C31CE22B /* Pods-PassGarbleMacTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PassGarbleMacTests/Pods-PassGarbleMacTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-PassGarbleMacTests/Pods-PassGarbleMacTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82E73717A2562031D5E1F4D85DD1A982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8AB2CF13DA17C908AC71FF556D30441C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D4573A050193AB4D2167E7A72536D4 /* PassGarble.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E88EC6E6CF79C7AC2BE35CE31418F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840025EFF088BE6965DC16C6A03920AB /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CEB2D30D139ACD82EDBE6C4BC750CB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 471C8D13F220258CEA283330AD93D9DC /* Pods-PassGarbleMac.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D39E634FC2CFF97419EB3682DD2807FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FD80AB57659E0F6AEEB155E482BA5084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE2330A42F1166B70CC8019F0695EB6 /* Pods-PassGarbleMacTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PassGarbleMacTests/Pods-PassGarbleMacTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-PassGarbleMacTests/Pods-PassGarbleMacTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		228DA9CB062A6F29BB62417F49B7F924 /* Build configuration list for PBXNativeTarget "Pods-PassGarbleMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB2D30D139ACD82EDBE6C4BC750CB32 /* Debug */,
+				14F3DEE0E1C718DABBB59567B89429A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39E634FC2CFF97419EB3682DD2807FA /* Debug */,
+				82E73717A2562031D5E1F4D85DD1A982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88520166E6F7EAA827A9968D38AA55A7 /* Build configuration list for PBXAggregateTarget "PassGarble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547BE90B7910182E1A6E4697BCD52A94 /* Debug */,
+				8AB2CF13DA17C908AC71FF556D30441C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D47D686647A05F2A3715A88047212FA /* Build configuration list for PBXNativeTarget "Pods-PassGarbleMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F5921CD61F17924958750690F0A5675 /* Debug */,
+				FD80AB57659E0F6AEEB155E482BA5084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E04B5E694699E1AF7D85F1E17DBCC7C8 /* Build configuration list for PBXNativeTarget "Pods-PassGarbleMac-PassGarbleMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E88EC6E6CF79C7AC2BE35CE31418F24 /* Debug */,
+				0157D29CDA2394A1F4FBC5E344B196DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

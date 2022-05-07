@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :macos, '11.0'
+
+target 'PassGarbleMac' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PassGarbleMac
+  pod 'PassGarble', :path => '../../'
+
+  target 'PassGarbleMacTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PassGarbleMacUITests' do
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,16 @@
+PODS:
+  - PassGarble (0.0.2-SNAPSHOT)
+
+DEPENDENCIES:
+  - PassGarble (from `../../`)
+
+EXTERNAL SOURCES:
+  PassGarble:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  PassGarble: a063f6a4f084be4417e30c62dd518c9ccbb0c992
+
+PODFILE CHECKSUM: d166dc30e2e448895cc3381be83048428612830f
+
+COCOAPODS: 1.11.3
