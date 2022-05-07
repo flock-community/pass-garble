@@ -1,0 +1,38 @@
+{
+  "name": "pass-garble-js",
+  "version": "0.0.1",
+  "description": "A pass garble integration with plain javascript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flock-community/pass-garble.git"
+  },
+  "keywords": [
+    "password",
+    "generator"
+  ],
+  "author": "Julius van Dis (julius.van.dis@flock.community)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flock-community/pass-garble/issues"
+  },
+  "homepage": "https://github.com/flock-community/pass-garble#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "crypto-browserify": "^3.12.0",
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.3.1",
+    "path-browserify": "^1.0.1",
+    "postcss": "^8.4.6",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tailwindcss": "^3.0.22",
+    "tw-elements": "^1.0.0-alpha11"
+  },
+  "dependencies": {
+    "@flock/pass-garble": "0.0.1"
+  }
+}
