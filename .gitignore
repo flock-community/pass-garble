@@ -31,3 +31,9 @@ hs_err_pid*
 # Intellij
 .idea
 *.iml
+
+# Generated iOS/macOS files
+PassGarble.podspec
+
+# node modules folder
+node_modules
