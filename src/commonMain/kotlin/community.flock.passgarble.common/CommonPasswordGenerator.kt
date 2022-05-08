@@ -57,6 +57,8 @@ class CommonPasswordGenerator(seed: Long) {
 
     companion object {
 
+        fun defaultOptions() = CommonPasswordGenerationOptions()
+
         private val lowerCase: List<Char> = ('a'..'z').toList()
         private val upperCase: List<Char> = ('A'..'Z').toList()
         private val numbers: List<Char> = ('0'..'9').toList()
