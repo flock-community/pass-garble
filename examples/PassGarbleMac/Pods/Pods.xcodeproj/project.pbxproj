@@ -20,14 +20,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		12B541962E8044CC260447808CD5E697 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 778638C841536088121199633DA10F33 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A015A4917A379014159DA9DA9E4A1B5 /* Pods-PassGarbleMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4CA245390E5A5317B7E2F98574C345 /* Pods-PassGarbleMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4091CC4CA16113BDA1093C63467F6A22 /* Pods-PassGarbleMacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CCB69C5E8EBF8D4ACA86E020A82E39 /* Pods-PassGarbleMacTests-dummy.m */; };
+		12B541962E8044CC260447808CD5E697 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4EFE74C22FAC8E149C05650C19140E4 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A015A4917A379014159DA9DA9E4A1B5 /* Pods-PassGarbleMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D88201B3CFCCDBC84C1AA6D4EB1D5DC4 /* Pods-PassGarbleMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4091CC4CA16113BDA1093C63467F6A22 /* Pods-PassGarbleMacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A641E073DC1AF71EC496F8E360E9510F /* Pods-PassGarbleMacTests-dummy.m */; };
 		60F67670D6CB76AD2AED7305FBB88E7D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		6C706AD500753F441310C95C9BFD0C3C /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EA60EA13B213B0DE9F07A423194974 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */; };
-		7FBBB99DC91B938519C014341E42171D /* Pods-PassGarbleMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B414B4F07F378D6255923AEEA720AF3D /* Pods-PassGarbleMac-dummy.m */; };
+		6C706AD500753F441310C95C9BFD0C3C /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC90573FBB4BCA24B815B14CB8F1E5B8 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */; };
+		7FBBB99DC91B938519C014341E42171D /* Pods-PassGarbleMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A76E2F66169D88C03E50BEC960269EEE /* Pods-PassGarbleMac-dummy.m */; };
 		8502F154699B5E02267D6328F79D6559 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		F3F1C958E73560D1D2A4ABCB87486C30 /* Pods-PassGarbleMacTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF51898FE2FF1450A3472FDFEE98730 /* Pods-PassGarbleMacTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3F1C958E73560D1D2A4ABCB87486C30 /* Pods-PassGarbleMacTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39BE4D0A18FDDD8638C02492A3B8D5D8 /* Pods-PassGarbleMacTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F87523969C092681408578C2AE38D98F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,42 +56,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CF51898FE2FF1450A3472FDFEE98730 /* Pods-PassGarbleMacTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMacTests-umbrella.h"; sourceTree = "<group>"; };
-		1FB5B11ED93889096AA13EDA24658099 /* Pods-PassGarbleMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMac.modulemap"; sourceTree = "<group>"; };
-		2EE2330A42F1166B70CC8019F0695EB6 /* Pods-PassGarbleMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMacTests.release.xcconfig"; sourceTree = "<group>"; };
+		1BF17DF0B58FE908F1AD47066F3E2B21 /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24C3A36AA0B5EB21C474F082FE8221BD /* Pods-PassGarbleMac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMac-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38086CCBC271DBCCE44E57567BCD1014 /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		39BE4D0A18FDDD8638C02492A3B8D5D8 /* Pods-PassGarbleMacTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMacTests-umbrella.h"; sourceTree = "<group>"; };
 		3EAB80D5F8FCB4E729960A730BEAC118 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		425EF8A2D64F2F50216554FB39CCE88D /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig"; sourceTree = "<group>"; };
-		471295A6121812154AA4EFB22C56E8D1 /* Pods-PassGarbleMac-PassGarbleMacUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMac-PassGarbleMacUITests.modulemap"; sourceTree = "<group>"; };
-		471C8D13F220258CEA283330AD93D9DC /* Pods-PassGarbleMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac.debug.xcconfig"; sourceTree = "<group>"; };
-		50F991233FA7F6DB52246D7FF080FB92 /* Pods-PassGarbleMac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-Info.plist"; sourceTree = "<group>"; };
-		53BE3B3FCE077B2780891BE4FB4B0B14 /* Pods-PassGarbleMacTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMacTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		54CCB69C5E8EBF8D4ACA86E020A82E39 /* Pods-PassGarbleMacTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMacTests-dummy.m"; sourceTree = "<group>"; };
+		3ECA58BD1A4B7DCBE6A7FA5D568B383C /* Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist"; sourceTree = "<group>"; };
+		40F45A0842F8CDF6F6D2CA9FE2D6ADD0 /* Pods-PassGarbleMac-PassGarbleMacUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMac-PassGarbleMacUITests.modulemap"; sourceTree = "<group>"; };
+		4EDED854268FC6DCE5B8242156F73397 /* Pods-PassGarbleMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac.release.xcconfig"; sourceTree = "<group>"; };
+		501352BA4096D480226DEC0EFC6D185E /* Pods-PassGarbleMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMacTests.release.xcconfig"; sourceTree = "<group>"; };
 		59AF650FA3FD37B8E7EB6996CF404227 /* Pods-PassGarbleMac */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PassGarbleMac"; path = Pods_PassGarbleMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D4573A050193AB4D2167E7A72536D4 /* PassGarble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PassGarble.release.xcconfig; sourceTree = "<group>"; };
-		62E28570F94A8F6487C22F20C31CE22B /* Pods-PassGarbleMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMacTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6AE29829F250DB6A2083D4D6544E373E /* Pods-PassGarbleMac-PassGarbleMacUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PassGarbleMac-PassGarbleMacUITests-frameworks.sh"; sourceTree = "<group>"; };
-		778638C841536088121199633DA10F33 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h"; sourceTree = "<group>"; };
-		7AAA1D15D3F867DFED9F8D51DB75A05B /* Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist"; sourceTree = "<group>"; };
-		840025EFF088BE6965DC16C6A03920AB /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		94235787EA6652DF5B52340D4166E3A9 /* Pods-PassGarbleMacTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMacTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D879A59813015A2A64478510BBE1C52 /* Pods-PassGarbleMac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PassGarbleMac-frameworks.sh"; sourceTree = "<group>"; };
+		671C3307E52F8A17C32C68DA595B2669 /* Pods-PassGarbleMacTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMacTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7BBC2B5D9257E0EA7E0420116AA99763 /* Pods-PassGarbleMacTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMacTests-Info.plist"; sourceTree = "<group>"; };
+		81C4C9C6ED99CC6229A9A5F17A611FAB /* Pods-PassGarbleMac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-acknowledgements.plist"; sourceTree = "<group>"; };
+		840BBC67FCF673367911D78FA09F36EE /* Pods-PassGarbleMacTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMacTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AB4CA245390E5A5317B7E2F98574C345 /* Pods-PassGarbleMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMac-umbrella.h"; sourceTree = "<group>"; };
-		B13A6ACC34A194294B7C4C7C3750F214 /* Pods-PassGarbleMacTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMacTests.modulemap"; sourceTree = "<group>"; };
-		B414B4F07F378D6255923AEEA720AF3D /* Pods-PassGarbleMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMac-dummy.m"; sourceTree = "<group>"; };
+		A641E073DC1AF71EC496F8E360E9510F /* Pods-PassGarbleMacTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMacTests-dummy.m"; sourceTree = "<group>"; };
+		A76E2F66169D88C03E50BEC960269EEE /* Pods-PassGarbleMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMac-dummy.m"; sourceTree = "<group>"; };
+		A7B5F123B5301205FA4BE726A929D633 /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B51946365F01D7523903AB89CCA9962C /* Pods-PassGarbleMac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-Info.plist"; sourceTree = "<group>"; };
 		B683CA8D0EBF8C4E6ED358370517C8C3 /* Pods-PassGarbleMacTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PassGarbleMacTests"; path = Pods_PassGarbleMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B79B6D1401BB3038A6FF023FC27825AE /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BC4007406D77E8AF9E0922CBB4F68DBB /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C31B1DEB307073D09C8D5E6D45A21393 /* Pods-PassGarbleMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac.debug.xcconfig"; sourceTree = "<group>"; };
 		CDFD05FA014A4AB3F3116297A82F0F35 /* Pods-PassGarbleMac-PassGarbleMacUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PassGarbleMac-PassGarbleMacUITests"; path = Pods_PassGarbleMac_PassGarbleMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E7029EF669ADCF90BD2BA94B59EC1A /* PassGarble.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PassGarble.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D4EFE74C22FAC8E149C05650C19140E4 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h"; sourceTree = "<group>"; };
+		D88201B3CFCCDBC84C1AA6D4EB1D5DC4 /* Pods-PassGarbleMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PassGarbleMac-umbrella.h"; sourceTree = "<group>"; };
 		D8C945194E5458190B30EF33C1F95BD6 /* PassGarble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PassGarble.debug.xcconfig; sourceTree = "<group>"; };
-		DA432D4CA74A4113C8081C017F80C38C /* Pods-PassGarbleMacTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMacTests-Info.plist"; sourceTree = "<group>"; };
-		DD78DE0438DE82F1D195C7B4A66223E8 /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DFDA83ED9B0649B6888ECD08A5D7B02E /* Pods-PassGarbleMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMac.release.xcconfig"; sourceTree = "<group>"; };
-		E1EA60EA13B213B0DE9F07A423194974 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m"; sourceTree = "<group>"; };
-		E3EB66747871CFBCBF6560C424113580 /* Pods-PassGarbleMac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PassGarbleMac-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E98229BF23818CFC6EA7003BB6025031 /* Pods-PassGarbleMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PassGarbleMacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB8B22BE8DB7C780A4B22C6A38012D35 /* PassGarble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassGarble.framework; path = build/cocoapods/framework/PassGarble.framework; sourceTree = "<group>"; };
-		F987C6B46107F8F19D55A7CC3BA8F152 /* Pods-PassGarbleMac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PassGarbleMac-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1917AA0492BAFA19304497CC7411BCC /* Pods-PassGarbleMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMac.modulemap"; sourceTree = "<group>"; };
+		FB1529F40BC601B69F427DD96ACCCCDC /* Pods-PassGarbleMacTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PassGarbleMacTests.modulemap"; sourceTree = "<group>"; };
+		FC90573FBB4BCA24B815B14CB8F1E5B8 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,16 +130,6 @@
 			path = "examples/PassGarbleMac/Pods/Target Support Files/PassGarble";
 			sourceTree = "<group>";
 		};
-		07577444B6FF1B9FE27E1B7FB65F65DF /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				78EE5C79D615F80A842523478E9C4EB9 /* Pods-PassGarbleMac */,
-				5D8006DF3BC8E192592676078A74BC85 /* Pods-PassGarbleMac-PassGarbleMacUITests */,
-				52839073E04B44CED7BFA6099B5492AE /* Pods-PassGarbleMacTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		07A1AB17E9EBE95754E1F7231E9A758A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,54 +148,62 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		52839073E04B44CED7BFA6099B5492AE /* Pods-PassGarbleMacTests */ = {
+		16C88AB413535D7B30580F2613192FC4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B13A6ACC34A194294B7C4C7C3750F214 /* Pods-PassGarbleMacTests.modulemap */,
-				53BE3B3FCE077B2780891BE4FB4B0B14 /* Pods-PassGarbleMacTests-acknowledgements.markdown */,
-				94235787EA6652DF5B52340D4166E3A9 /* Pods-PassGarbleMacTests-acknowledgements.plist */,
-				54CCB69C5E8EBF8D4ACA86E020A82E39 /* Pods-PassGarbleMacTests-dummy.m */,
-				DA432D4CA74A4113C8081C017F80C38C /* Pods-PassGarbleMacTests-Info.plist */,
-				0CF51898FE2FF1450A3472FDFEE98730 /* Pods-PassGarbleMacTests-umbrella.h */,
-				62E28570F94A8F6487C22F20C31CE22B /* Pods-PassGarbleMacTests.debug.xcconfig */,
-				2EE2330A42F1166B70CC8019F0695EB6 /* Pods-PassGarbleMacTests.release.xcconfig */,
+				4C7D1C0F31E34FF7062FF1D6CA0249DE /* Pods-PassGarbleMac */,
+				4C952F9DA3EF8D367D8DD2ECE390E5BB /* Pods-PassGarbleMac-PassGarbleMacUITests */,
+				43B067DD3B9C25BDBB63914511781248 /* Pods-PassGarbleMacTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		43B067DD3B9C25BDBB63914511781248 /* Pods-PassGarbleMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB1529F40BC601B69F427DD96ACCCCDC /* Pods-PassGarbleMacTests.modulemap */,
+				671C3307E52F8A17C32C68DA595B2669 /* Pods-PassGarbleMacTests-acknowledgements.markdown */,
+				840BBC67FCF673367911D78FA09F36EE /* Pods-PassGarbleMacTests-acknowledgements.plist */,
+				A641E073DC1AF71EC496F8E360E9510F /* Pods-PassGarbleMacTests-dummy.m */,
+				7BBC2B5D9257E0EA7E0420116AA99763 /* Pods-PassGarbleMacTests-Info.plist */,
+				39BE4D0A18FDDD8638C02492A3B8D5D8 /* Pods-PassGarbleMacTests-umbrella.h */,
+				E98229BF23818CFC6EA7003BB6025031 /* Pods-PassGarbleMacTests.debug.xcconfig */,
+				501352BA4096D480226DEC0EFC6D185E /* Pods-PassGarbleMacTests.release.xcconfig */,
 			);
 			name = "Pods-PassGarbleMacTests";
 			path = "Target Support Files/Pods-PassGarbleMacTests";
 			sourceTree = "<group>";
 		};
-		5D8006DF3BC8E192592676078A74BC85 /* Pods-PassGarbleMac-PassGarbleMacUITests */ = {
+		4C7D1C0F31E34FF7062FF1D6CA0249DE /* Pods-PassGarbleMac */ = {
 			isa = PBXGroup;
 			children = (
-				471295A6121812154AA4EFB22C56E8D1 /* Pods-PassGarbleMac-PassGarbleMacUITests.modulemap */,
-				B79B6D1401BB3038A6FF023FC27825AE /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown */,
-				DD78DE0438DE82F1D195C7B4A66223E8 /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist */,
-				E1EA60EA13B213B0DE9F07A423194974 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */,
-				6AE29829F250DB6A2083D4D6544E373E /* Pods-PassGarbleMac-PassGarbleMacUITests-frameworks.sh */,
-				7AAA1D15D3F867DFED9F8D51DB75A05B /* Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist */,
-				778638C841536088121199633DA10F33 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */,
-				840025EFF088BE6965DC16C6A03920AB /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */,
-				425EF8A2D64F2F50216554FB39CCE88D /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */,
-			);
-			name = "Pods-PassGarbleMac-PassGarbleMacUITests";
-			path = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests";
-			sourceTree = "<group>";
-		};
-		78EE5C79D615F80A842523478E9C4EB9 /* Pods-PassGarbleMac */ = {
-			isa = PBXGroup;
-			children = (
-				1FB5B11ED93889096AA13EDA24658099 /* Pods-PassGarbleMac.modulemap */,
-				E3EB66747871CFBCBF6560C424113580 /* Pods-PassGarbleMac-acknowledgements.markdown */,
-				F987C6B46107F8F19D55A7CC3BA8F152 /* Pods-PassGarbleMac-acknowledgements.plist */,
-				B414B4F07F378D6255923AEEA720AF3D /* Pods-PassGarbleMac-dummy.m */,
-				9D879A59813015A2A64478510BBE1C52 /* Pods-PassGarbleMac-frameworks.sh */,
-				50F991233FA7F6DB52246D7FF080FB92 /* Pods-PassGarbleMac-Info.plist */,
-				AB4CA245390E5A5317B7E2F98574C345 /* Pods-PassGarbleMac-umbrella.h */,
-				471C8D13F220258CEA283330AD93D9DC /* Pods-PassGarbleMac.debug.xcconfig */,
-				DFDA83ED9B0649B6888ECD08A5D7B02E /* Pods-PassGarbleMac.release.xcconfig */,
+				F1917AA0492BAFA19304497CC7411BCC /* Pods-PassGarbleMac.modulemap */,
+				24C3A36AA0B5EB21C474F082FE8221BD /* Pods-PassGarbleMac-acknowledgements.markdown */,
+				81C4C9C6ED99CC6229A9A5F17A611FAB /* Pods-PassGarbleMac-acknowledgements.plist */,
+				A76E2F66169D88C03E50BEC960269EEE /* Pods-PassGarbleMac-dummy.m */,
+				B51946365F01D7523903AB89CCA9962C /* Pods-PassGarbleMac-Info.plist */,
+				D88201B3CFCCDBC84C1AA6D4EB1D5DC4 /* Pods-PassGarbleMac-umbrella.h */,
+				C31B1DEB307073D09C8D5E6D45A21393 /* Pods-PassGarbleMac.debug.xcconfig */,
+				4EDED854268FC6DCE5B8242156F73397 /* Pods-PassGarbleMac.release.xcconfig */,
 			);
 			name = "Pods-PassGarbleMac";
 			path = "Target Support Files/Pods-PassGarbleMac";
+			sourceTree = "<group>";
+		};
+		4C952F9DA3EF8D367D8DD2ECE390E5BB /* Pods-PassGarbleMac-PassGarbleMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40F45A0842F8CDF6F6D2CA9FE2D6ADD0 /* Pods-PassGarbleMac-PassGarbleMacUITests.modulemap */,
+				1BF17DF0B58FE908F1AD47066F3E2B21 /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.markdown */,
+				A7B5F123B5301205FA4BE726A929D633 /* Pods-PassGarbleMac-PassGarbleMacUITests-acknowledgements.plist */,
+				FC90573FBB4BCA24B815B14CB8F1E5B8 /* Pods-PassGarbleMac-PassGarbleMacUITests-dummy.m */,
+				3ECA58BD1A4B7DCBE6A7FA5D568B383C /* Pods-PassGarbleMac-PassGarbleMacUITests-Info.plist */,
+				D4EFE74C22FAC8E149C05650C19140E4 /* Pods-PassGarbleMac-PassGarbleMacUITests-umbrella.h */,
+				38086CCBC271DBCCE44E57567BCD1014 /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */,
+				BC4007406D77E8AF9E0922CBB4F68DBB /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */,
+			);
+			name = "Pods-PassGarbleMac-PassGarbleMacUITests";
+			path = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests";
 			sourceTree = "<group>";
 		};
 		A36817B5E1F783554305CE20C9EACA09 /* Frameworks */ = {
@@ -225,7 +221,7 @@
 				0E275F94C218D345D665F1094C00BE37 /* Development Pods */,
 				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
 				07A1AB17E9EBE95754E1F7231E9A758A /* Products */,
-				07577444B6FF1B9FE27E1B7FB65F65DF /* Targets Support Files */,
+				16C88AB413535D7B30580F2613192FC4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -470,7 +466,7 @@
 /* Begin XCBuildConfiguration section */
 		0157D29CDA2394A1F4FBC5E344B196DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 425EF8A2D64F2F50216554FB39CCE88D /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */;
+			baseConfigurationReference = BC4007406D77E8AF9E0922CBB4F68DBB /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -507,7 +503,7 @@
 		};
 		14F3DEE0E1C718DABBB59567B89429A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFDA83ED9B0649B6888ECD08A5D7B02E /* Pods-PassGarbleMac.release.xcconfig */;
+			baseConfigurationReference = 4EDED854268FC6DCE5B8242156F73397 /* Pods-PassGarbleMac.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -561,7 +557,7 @@
 		};
 		6F5921CD61F17924958750690F0A5675 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62E28570F94A8F6487C22F20C31CE22B /* Pods-PassGarbleMacTests.debug.xcconfig */;
+			baseConfigurationReference = E98229BF23818CFC6EA7003BB6025031 /* Pods-PassGarbleMacTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -677,7 +673,7 @@
 		};
 		8E88EC6E6CF79C7AC2BE35CE31418F24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 840025EFF088BE6965DC16C6A03920AB /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */;
+			baseConfigurationReference = 38086CCBC271DBCCE44E57567BCD1014 /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -714,7 +710,7 @@
 		};
 		CEB2D30D139ACD82EDBE6C4BC750CB32 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 471C8D13F220258CEA283330AD93D9DC /* Pods-PassGarbleMac.debug.xcconfig */;
+			baseConfigurationReference = C31B1DEB307073D09C8D5E6D45A21393 /* Pods-PassGarbleMac.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -817,7 +813,7 @@
 		};
 		FD80AB57659E0F6AEEB155E482BA5084 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EE2330A42F1166B70CC8019F0695EB6 /* Pods-PassGarbleMacTests.release.xcconfig */;
+			baseConfigurationReference = 501352BA4096D480226DEC0EFC6D185E /* Pods-PassGarbleMacTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";

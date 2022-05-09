@@ -4,7 +4,8 @@
   "description": "A pass garble integration with plain javascript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,6 @@
     "tw-elements": "^1.0.0-alpha11"
   },
   "dependencies": {
-    "@flock/pass-garble": "0.0.1"
+    "@flock/pass-garble": "0.0.2"
   }
 }

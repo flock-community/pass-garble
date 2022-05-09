@@ -1,6 +1,6 @@
 {
   "name": "PassGarble",
-  "version": "0.0.2-SNAPSHOT",
+  "version": "0.0.2",
   "homepage": "https://github.com/flock-community/pass-garble",
   "source": {
     "http": ""

@@ -8,7 +8,7 @@ plugins {
     application
 }
 
-val passGarbleVersion = "0.0.2-SNAPSHOT"
+val passGarbleVersion = "0.0.2"
 group = "community.flock.pass-garble"
 version = passGarbleVersion
 

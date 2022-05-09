@@ -172,7 +172,6 @@
 				C7F42CAB27C148A800AD667A /* Sources */,
 				C7F42CAC27C148A800AD667A /* Frameworks */,
 				C7F42CAD27C148A800AD667A /* Resources */,
-				5D8DD3E584E1AD0AEA86B751 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +209,6 @@
 				C7F42CC627C148A900AD667A /* Sources */,
 				C7F42CC727C148A900AD667A /* Frameworks */,
 				C7F42CC827C148A900AD667A /* Resources */,
-				0481A540A03EF69E28EBF7FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,23 +290,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0481A540A03EF69E28EBF7FD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0B177609ADA6A25CF6BDFC23 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,23 +354,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D8DD3E584E1AD0AEA86B751 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -571,12 +535,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D937F3AB382B49E0EDE530C4 /* Pods-PassGarbleMac.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PassGarbleMac/PassGarbleMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -586,7 +552,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_BUNDLE_IDENTIFIER = flock.community.PassGarbleMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -599,12 +565,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53D57D80844BD023E42DEE82 /* Pods-PassGarbleMac.release.xcconfig */;
 			buildSettings = {
+				ARCHS = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PassGarbleMac/PassGarbleMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -614,7 +582,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = "${inherited}";
 				PRODUCT_BUNDLE_IDENTIFIER = flock.community.PassGarbleMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,7 +8,7 @@
 val picocli_version: String by project
 
 
-val passGarbleCliVersion = "0.0.2-SNAPSHOT"
+val passGarbleCliVersion = "0.0.2"
 group = "community.flock.pass-garble.cli"
 version = passGarbleCliVersion
 
@@ -33,7 +33,7 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    implementation("community.flock.pass-garble:pass-garble-jvm:0.0.2-SNAPSHOT")
+    implementation("community.flock.pass-garble:pass-garble-jvm:0.0.2")
 
     implementation("info.picocli:picocli:$picocli_version")
     kapt("info.picocli:picocli-codegen:$picocli_version")

@@ -11,7 +11,7 @@ import kotlin.system.exitProcess
 @Command(
     name = "pass-garble",
     mixinStandardHelpOptions = true,
-    version = ["pass-garble-cli 0.0.2-SNAPSHOT"],
+    version = ["0.0.2"],
     description = ["A password generator for all your passwords"]
 )
 class PassGarbleCli : Callable<Int> {
