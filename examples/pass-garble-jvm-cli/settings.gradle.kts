@@ -7,5 +7,5 @@
  * in the user manual at https://docs.gradle.org/7.4/userguide/multi_project_builds.html
  */
 
-rootProject.name = "pass-garble-cli"
+rootProject.name = "pass-garble-jvm-cli"
 include("app")

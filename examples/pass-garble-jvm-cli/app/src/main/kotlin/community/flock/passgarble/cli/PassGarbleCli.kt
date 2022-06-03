@@ -1,7 +1,7 @@
 package community.flock.passgarble.cli
 
 import community.flock.passgarble.common.CommonPasswordGenerator
-import community.flock.passgarble.common.PasswordGeneratorFactory
+import community.flock.passgarble.common.createGenerator
 import picocli.CommandLine
 import picocli.CommandLine.Command
 import picocli.CommandLine.Option
@@ -15,7 +15,7 @@ import kotlin.system.exitProcess
     description = ["A password generator for all your passwords"]
 )
 class PassGarbleCli : Callable<Int> {
-    private val passwordGenerator: CommonPasswordGenerator = PasswordGeneratorFactory.createGenerator()
+    private val passwordGenerator: CommonPasswordGenerator = createGenerator()
     private val defaultOptions = CommonPasswordGenerator.defaultOptions()
 
     @Option(

@@ -1,9 +1,10 @@
 package community.flock.passgarble.common
 
-import java.time.Instant
+import java.security.SecureRandom
 
-actual object PasswordGeneratorFactory {
-    actual fun createGenerator(): CommonPasswordGenerator {
-        return CommonPasswordGenerator(Instant.now().epochSecond)
-    }
+actual suspend fun getSecureRandomBytes(length: Int): UByteArray {
+    val random = SecureRandom()
+    val bytes = ByteArray(length)
+    random.nextBytes(bytes)
+    return bytes.toUByteArray()
 }

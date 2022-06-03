@@ -1,74 +1,48 @@
 package community.flock.passgarble.common
 
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.test.runTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFails
 import kotlin.test.assertTrue
 
+@OptIn(ExperimentalCoroutinesApi::class)
 internal class PasswordGeneratorTest {
-    @Test
-    fun generateFunctionIsReproducibleForInstancesUsingTheSameSeed() {
-        val generator = CommonPasswordGenerator(-1)
-        assertEquals("{S?9q27?!U,bX[F+iMLROcM`fk67e>s", generator.generate())
-        assertEquals("l`oKFBWNj!a{3MU3</.[}au(R1pk-)F", generator.generate())
 
-        val generator2 = CommonPasswordGenerator(-1)
-        assertEquals("{S?9q27?!U,bX[F+iMLROcM`fk67e>s", generator2.generate())
-        assertEquals("l`oKFBWNj!a{3MU3</.[}au(R1pk-)F", generator2.generate())
+    @Test
+    fun whenUsingOnlyNumbers_passwordIsNumberOnly() = runTest {
+        val generator = CommonPasswordGenerator()
+
+        val generatedPassword = generator.generate(
+            passwordLength = 10,
+            includeNumbers = true,
+            includeUpperCase = false,
+            includeLowerCase = false,
+            includeSpecialChars = false,
+        )
+
+        val regex = """\d{10}""".toRegex()
+        assertTrue(regex.containsMatchIn(generatedPassword))
     }
 
     @Test
-    fun whenUsingOnlyNumbers_passwordIsNumberOnly() {
-        val generator = CommonPasswordGenerator(-1)
-        assertEquals(
-            "6411649106",
-            generator.generate(
-                passwordLength = 10,
-                includeNumbers = true,
-                includeUpperCase = false,
-                includeLowerCase = false,
-                includeSpecialChars = false,
-            )
-        )
-        assertEquals(
-            "9194198873", generator.generate(
-                passwordLength = 10,
-                includeNumbers = true,
-                includeUpperCase = false,
-                includeLowerCase = false,
-                includeSpecialChars = false,
-            )
+    fun whenUsingOnlyUpperAndLowerCase_passwordIsAsSuch() = runTest {
+        val generator = CommonPasswordGenerator()
+        val generatedPassword = generator.generate(
+            passwordLength = 10,
+            includeNumbers = false,
+            includeUpperCase = true,
+            includeLowerCase = true,
+            includeSpecialChars = false,
         )
 
+        val regex = """[A-z]{10}""".toRegex()
+        assertTrue(regex.containsMatchIn(generatedPassword))
     }
 
     @Test
-    fun whenUsingOnlyUpperAndLowerCase_passwordIsNumberOnly() {
-        val generator = CommonPasswordGenerator(-1)
-        assertEquals(
-            "6411649106",
-            generator.generate(
-                passwordLength = 10,
-                includeNumbers = true,
-                includeUpperCase = false,
-                includeLowerCase = false,
-                includeSpecialChars = false,
-            )
-        )
-        assertEquals(
-            "9194198873", generator.generate(
-                passwordLength = 10,
-                includeNumbers = true,
-                includeUpperCase = false,
-                includeLowerCase = false,
-                includeSpecialChars = false,
-            )
-        )
-
-    }
-
-    @Test
-    fun whenNoCategoriesRequested_IllegalArgumentIsThrown() {
+    fun whenNoCategoriesRequested_IllegalArgumentIsThrown() = runTest  {
         val options = CommonPasswordGenerationOptions(
             passwordLength = 10,
             includeNumbers = false,
@@ -76,7 +50,7 @@ internal class PasswordGeneratorTest {
             includeLowerCase = false,
             includeSpecialChars = false
         )
-        val generator = CommonPasswordGenerator(-1)
+        val generator = CommonPasswordGenerator()
         val exception = assertFails { generator.generate(options) }
 
         // Verify exception is hierarchically a runtime exception
@@ -87,7 +61,7 @@ internal class PasswordGeneratorTest {
 
     }
     @Test
-    fun whenASingleCategoryIsRequested_passwordIsLimited() {
+    fun whenASingleCategoryIsRequested_passwordIsLimited() = runTest  {
         val emptyPassword = CommonPasswordGenerationOptions(
             passwordLength = 10,
             includeNumbers = false,
@@ -97,16 +71,16 @@ internal class PasswordGeneratorTest {
         )
 
         val testCases = mapOf(
-            emptyPassword.copy(includeLowerCase = true) to "eudbwibxgy",
-            emptyPassword.copy(includeUpperCase = true) to "EUDBWIBXGY",
-            emptyPassword.copy(includeNumbers = true) to "6411649106",
-            emptyPassword.copy(includeSpecialChars = true) to "/;<%(!&#>{",
-            emptyPassword.copy(includeSpecialChars = true, specialCharSet = listOf('%', '#', '!')) to "%!%##%!%!#",
+            emptyPassword.copy(includeLowerCase = true) to """[a-z]{10}""",
+            emptyPassword.copy(includeUpperCase = true) to """[A-Z]{10}""",
+            emptyPassword.copy(includeNumbers = true) to """[0-9]{10}""",
+            emptyPassword.copy(includeSpecialChars = true, specialCharSet = listOf('%', '#', '!')) to """[%#!]{10}""",
         )
 
         testCases.forEach { (options, expected) ->
-            val generator = CommonPasswordGenerator(-1)
-            assertEquals(expected, generator.generate(options))
+            val generator = CommonPasswordGenerator()
+            assertTrue(expected.toRegex().containsMatchIn(generator.generate(options)),"$options was not $expected")
+
         }
     }
 

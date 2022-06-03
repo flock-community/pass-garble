@@ -1,6 +1,8 @@
 package community.flock.passgarble.common
 
-import kotlin.random.Random
+import kotlin.coroutines.cancellation.CancellationException
+import kotlin.coroutines.coroutineContext
+import kotlin.math.floor
 
 /**
  * A password generator, that allows one to generate configurable passwords.
@@ -8,10 +10,10 @@ import kotlin.random.Random
  * @property seed - provide a seed to initialize the randomizer. Ideally this is a context dependent value
  *      and not a fixed value  as to prevent the same password from being generated
  */
-class CommonPasswordGenerator(seed: Long) {
-    private val random = Random(seed)
+class CommonPasswordGenerator {
 
-    fun generate(generationOptions: CommonPasswordGenerationOptions
+    suspend fun generate(
+        generationOptions: CommonPasswordGenerationOptions
     ): String = generate(
         passwordLength = generationOptions.passwordLength,
         includeLowerCase = generationOptions.includeLowerCase,
@@ -21,7 +23,7 @@ class CommonPasswordGenerator(seed: Long) {
         specialCharsSet = generationOptions.specialCharSet
     )
 
-    fun generate(
+    suspend fun generate(
         passwordLength: Int = 31,
         includeLowerCase: Boolean = true,
         includeUpperCase: Boolean = true,
@@ -29,9 +31,10 @@ class CommonPasswordGenerator(seed: Long) {
         includeSpecialChars: Boolean = true,
         specialCharsSet: List<Char> = defaultSpecialChars
     ): String {
-        if (!(includeLowerCase || includeUpperCase || includeNumbers || includeSpecialChars)){
+
+        if (!(includeLowerCase || includeUpperCase || includeNumbers || includeSpecialChars)) {
             throw IllegalArgumentException("Choose at least one category of characters")
-        } else if (includeSpecialChars && specialCharsSet.isEmpty()){
+        } else if (includeSpecialChars && specialCharsSet.isEmpty()) {
             throw IllegalArgumentException("Cannot include special characters if the specialCharSet is empty")
         }
 
@@ -42,10 +45,10 @@ class CommonPasswordGenerator(seed: Long) {
                     specialCharsSet.fullOrEmpty(includeSpecialChars)
 
         return (1..passwordLength)
-            .map { random.nextInt(0, charPool.size) }
-            .map(charPool::get)
+            .map { Companion.nextRandomCharacter(charPool) }
             .joinToString("");
     }
+
 
     private infix fun List<Char>.fullOrEmpty(shouldInclude: Boolean): List<Char> =
         this fullOrEmpty { shouldInclude }
@@ -73,6 +76,24 @@ class CommonPasswordGenerator(seed: Long) {
         private fun String.asCharList(): List<Char> = toCharArray().toList()
 
         val defaultSpecialChars = (brackets + maths + quotes + punctuation + others)
+        @OptIn(ExperimentalUnsignedTypes::class)
+        private suspend fun getRandomInt(xrange: IntRange): Int {
+            // Create byte array and fill with 1 random number
+            var byteArray = getSecureRandomBytes(1)
+
+            val range = xrange.last - xrange.first + 1
+            val maxRange = 256;
+            while (byteArray[0].toInt() >= floor(maxRange * 1.0 / range) * range) {
+                byteArray = getSecureRandomBytes(1)
+            }
+
+            return xrange.first + (byteArray[0].toInt() % range);
+        }
+
+        private suspend fun nextRandomCharacter(charPool: List<Char>): Char {
+            val nextInt = getRandomInt(charPool.indices)
+            return charPool[nextInt]
+        }
     }
 }
 
@@ -87,6 +108,15 @@ data class CommonPasswordGenerationOptions(
 )
 
 
-expect object PasswordGeneratorFactory {
-    fun createGenerator(): CommonPasswordGenerator
+@OptIn(ExperimentalUnsignedTypes::class)
+@Throws(SecureRandomException::class, CancellationException::class)
+expect suspend fun getSecureRandomBytes(length: Int): UByteArray
+
+
+class SecureRandomException(
+    override val message: String,
+    override val cause: Throwable?
+) : RuntimeException(message, cause) {
+    constructor(message: String) : this(message, null)
 }
+

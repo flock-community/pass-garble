@@ -6,6 +6,7 @@
  * User Manual available at https://docs.gradle.org/7.4/userguide/building_java_projects.html
  */
 val picocli_version: String by project
+val kotlin_version: String by project
 
 
 val passGarbleCliVersion = "0.0.2"
@@ -30,16 +31,16 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:$kotlin_version"))
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
 
     implementation("community.flock.pass-garble:pass-garble-jvm:0.0.2")
 
     implementation("info.picocli:picocli:$picocli_version")
     kapt("info.picocli:picocli-codegen:$picocli_version")
 
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:$kotlin_version")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 }
 
 val main_class = "community.flock.passgarble.cli.PassGarbleCliKt"
@@ -71,7 +72,7 @@ kapt {
 }
 
 graal{
-    outputName( "pass-garble-cli")
+    outputName( "pass-garble-jvm-cli")
     javaVersion("11")
     graalVersion("22.1.0")
     mainClass(main_class)

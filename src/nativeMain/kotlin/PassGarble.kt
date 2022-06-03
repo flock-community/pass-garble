@@ -1,17 +1,17 @@
 import community.flock.passgarble.common.CommonPasswordGenerationOptions
 import community.flock.passgarble.common.CommonPasswordGenerator
-import community.flock.passgarble.common.PasswordGeneratorFactory
 
 class PassGarble() {
-    private val passwordGenerator = PasswordGeneratorFactory.createGenerator();
+    private val passwordGenerator = CommonPasswordGenerator();
 
     fun defaultSpecialChars() = CommonPasswordGenerator.defaultSpecialChars
     fun defaultOptions() = CommonPasswordGenerationOptions()
 
-    fun generate(generationOptions: CommonPasswordGenerationOptions
+    suspend fun generate(
+        generationOptions: CommonPasswordGenerationOptions
     ): String = passwordGenerator.generate(generationOptions)
 
-    fun generate(
+    suspend fun generate(
         passwordLength: Int,
         includeLowerCase: Boolean,
         includeUpperCase: Boolean,

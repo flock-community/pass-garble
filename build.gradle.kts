@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig.Mode
 
 plugins {
-    kotlin("multiplatform") version "1.6.20"
-    kotlin("native.cocoapods") version "1.6.20"
+    kotlin("multiplatform") version "1.6.21"
+    kotlin("native.cocoapods") version "1.6.21"
     id("dev.petuska.npm.publish") version "2.1.2"
     id("maven-publish")
     application
@@ -22,6 +22,7 @@ kotlin {
     jvm {
         compilations.all {
             kotlinOptions.jvmTarget = "11"
+
         }
         testRuns["test"].executionTask.configure {
             useJUnitPlatform()
@@ -51,13 +52,22 @@ kotlin {
     }
 
     macosX64("native") {
+        val main by compilations.getting {
+            kotlinOptions {
+                freeCompilerArgs = freeCompilerArgs + "-Xbundle-id=PassGarble"
+            }
+        }
         binaries {
             framework {
                 baseName = "PassGarble"
 
+
             }
         }
+
+
     }
+
 
     cocoapods {
         // Required properties
@@ -69,6 +79,8 @@ kotlin {
         // Optional properties
         // Configure the Pod name here instead of changing the Gradle project name
         name = "PassGarble"
+
+
 
         framework {
             baseName = "PassGarble"
@@ -85,20 +97,31 @@ kotlin {
 
     sourceSets {
         val commonMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
+            }
 
         }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1")
             }
         }
         val jvmMain by getting
         val jvmTest by getting
-        val jsMain by getting
+        val jsMain by getting {
+            dependencies {
+                implementation("com.ionspin.kotlin:multiplatform-crypto-libsodium-bindings:0.8.6")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.1")
+
+            }
+        }
         val jsTest by getting
         val nativeMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.3.2")
+
             }
         }
         val nativeTest by getting
