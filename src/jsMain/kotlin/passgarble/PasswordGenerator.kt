@@ -11,24 +11,18 @@ import kotlin.js.Promise
 
 @JsExport
 class PasswordGenerator() {
-    private val delegate: CommonPasswordGenerator = CommonPasswordGenerator();
-
     @OptIn(DelicateCoroutinesApi::class)
-    fun generatePassword(options: PasswordGenerationOptions = defaultOptions()): Promise<String> {
-        return GlobalScope.promise { generate(options) }
+    fun generatePassword(options: PasswordGenerationOptions = defaultOptions()): Promise<String> =
+        GlobalScope.promise { generate(options) }
 
-    }
-
-    private suspend fun generate(options: PasswordGenerationOptions): String {
-        return CommonPasswordGenerator.generate(
-            passwordLength = options.passwordLength,
-            includeLowerCase = options.includeLowerCase,
-            includeUpperCase = options.includeUpperCase,
-            includeNumbers = options.includeNumbers,
-            includeSpecialChars = options.includeSpecialChars,
-            specialCharsSet = options.specialCharSet.toCharArray().toList(),
-        )
-    }
+    private suspend fun generate(options: PasswordGenerationOptions): String = CommonPasswordGenerator.generate(
+        passwordLength = options.passwordLength,
+        includeLowerCase = options.includeLowerCase,
+        includeUpperCase = options.includeUpperCase,
+        includeNumbers = options.includeNumbers,
+        includeSpecialChars = options.includeSpecialChars,
+        specialCharsSet = options.specialCharSet.toCharArray().toList(),
+    )
 }
 
 val commonDefaultOptions = CommonPasswordGenerationOptions()
@@ -44,15 +38,5 @@ data class PasswordGenerationOptions(
 )
 
 @JsExport
-object PasswordGenerationOptionsObject {
-    val passwordLength: Int = commonDefaultOptions.passwordLength
-    val includeLowerCase: Boolean = commonDefaultOptions.includeLowerCase
-    val includeUpperCase: Boolean = commonDefaultOptions.includeUpperCase
-    val includeNumbers: Boolean = commonDefaultOptions.includeNumbers
-    val includeSpecialChars: Boolean = commonDefaultOptions.includeSpecialChars
-    val specialCharSet: String = commonDefaultOptions.specialCharSet.joinToString("")
-}
-
-@JsExport
+@JsName("defaultOptions")
 fun defaultOptions() = PasswordGenerationOptions()
-

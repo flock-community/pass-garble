@@ -15,4 +15,4 @@ As a default, the example is linked to a published version of `@flock/pass-garbl
 2. Link with the local npm package
    1. From the root of the project, navigate to the package located in `build/publications/npm/js`
    2. `npm link`
-   3. From the current folder, link using `npm link pass-garble`
+   3. From the current folder, link using `npm link @flock/pass-garble`
