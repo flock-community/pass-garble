@@ -12,7 +12,3 @@ actual suspend fun getSecureRandomBytes(length: Int): UByteArray {
     return bytes.toUByteArray()
 }
 
-// JVM
-internal actual fun writeLogMessage(message: String, logLevel: LogLevel) {
-    println("[$logLevel]: $message")
-}

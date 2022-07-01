@@ -34,7 +34,9 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:$kotlin_version"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
 
-    implementation("community.flock.pass-garble:pass-garble-jvm:0.0.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
+
+    implementation("community.flock.pass-garble:pass-garble-jvm:0.0.3-SNAPSHOT")
 
     implementation("info.picocli:picocli:$picocli_version")
     kapt("info.picocli:picocli-codegen:$picocli_version")

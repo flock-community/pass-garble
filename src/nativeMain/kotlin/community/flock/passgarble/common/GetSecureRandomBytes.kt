@@ -22,5 +22,3 @@ actual suspend fun getSecureRandomBytes(length: Int): UByteArray {
     }
 }
 
-internal actual fun writeLogMessage(message: String, logLevel: LogLevel) {
-}

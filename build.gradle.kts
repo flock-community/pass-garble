@@ -7,7 +7,7 @@ plugins {
     id("maven-publish")
 }
 
-val passGarbleVersion = "0.0.2"
+val passGarbleVersion = "0.0.3-SNAPSHOT"
 group = "community.flock.pass-garble"
 version = passGarbleVersion
 
