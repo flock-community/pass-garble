@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.BitcodeEmbeddingMode
+import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig.Mode
 
 plugins {
@@ -81,12 +83,13 @@ kotlin {
         framework {
             baseName = "PassGarble"
             osx.deploymentTarget = "11.0"
+
+            // Bitcode embedding
+            embedBitcode(BitcodeEmbeddingMode.BITCODE)
         }
         // Maps custom Xcode configuration to NativeBuildType
-        xcodeConfigurationToNativeBuildType["CUSTOM_DEBUG"] =
-            org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.DEBUG
-        xcodeConfigurationToNativeBuildType["CUSTOM_RELEASE"] =
-            org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE
+        xcodeConfigurationToNativeBuildType["CUSTOM_DEBUG"] = NativeBuildType.DEBUG
+        xcodeConfigurationToNativeBuildType["CUSTOM_RELEASE"] = NativeBuildType.RELEASE
     }
 
 
@@ -126,12 +129,7 @@ kotlin {
 
 
 
-        val nativeMain by getting {
-            dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.3.2")
-
-            }
-        }
+        val nativeMain by getting
         val nativeTest by getting
     }
 

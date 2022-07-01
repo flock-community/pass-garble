@@ -1,4 +1,4 @@
-# Pass Garble JS Example implementation
+# Pass Garble JVM CLI Example implementation
 
 This example shows how to integrate a kotlin multiplatform library into a jvm cli application
 

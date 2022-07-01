@@ -41,7 +41,7 @@ class ViewController: NSViewController {
     }
 
 
-    @IBAction func generatePassword(_ sender: Any) {
+    @IBAction func generatePassword(_ sender: Any) async {
         
         let x = CommonPasswordGenerationOptions(passwordLength: passwordLength.intValue,
                                                 includeLowerCase: checked(includeLowercase),
@@ -49,9 +49,12 @@ class ViewController: NSViewController {
                                                 includeNumbers: checked(includeNumbers),
                                                 includeSpecialChars: checked(includeSpecialCharacters),
                                                 specialCharSet: passwordGenerator.defaultSpecialChars())
-
-        generatedPasswordField.stringValue = passwordGenerator.generate(generationOptions: x)
-
+        do {
+            generatedPasswordField.stringValue = try await passwordGenerator.generate(generationOptions: x)
+        } catch {
+            // Couldn't create audio player object, log the error
+            print("Couldn't generate a password")
+        }
     }
     
     func checked(_ checkbox: NSButton) -> Bool{

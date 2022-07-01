@@ -1,5 +1,5 @@
 PODS:
-  - PassGarble (0.0.2)
+  - PassGarble (0.0.3-SNAPSHOT)
 
 DEPENDENCIES:
   - PassGarble (from `../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  PassGarble: cbbc8a5c42cb7d6d7d5bafd61e3015a48cfe5454
+  PassGarble: da83f825aafcf008dcbf97488d15b5c3e440b74b
 
 PODFILE CHECKSUM: d166dc30e2e448895cc3381be83048428612830f
 

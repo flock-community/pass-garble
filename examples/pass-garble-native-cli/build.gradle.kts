@@ -4,7 +4,7 @@ plugins {
 }
 
 
-version = "0.0.2"
+version = "0.0.3-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -24,7 +24,9 @@ kotlin {
         compilations {
             val main by getting {
                 dependencies {
-                    implementation("community.flock.pass-garble:pass-garble-native:0.0.2")
+                    implementation("community.flock.pass-garble:pass-garble-native:0.0.3-SNAPSHOT")
+                    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
+
                 }
             }
         }

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		329B71972BC0D38449ED6716 /* Pods_PassGarbleMac_PassGarbleMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B652838BB91C7AF1DA128B /* Pods_PassGarbleMac_PassGarbleMacUITests.framework */; };
-		491CF58B54DA07AB6A21336E /* Pods_PassGarbleMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523A0D883AB48023519FE98F /* Pods_PassGarbleMac.framework */; };
+		3569AB014B00A9D85BD2835F /* Pods_PassGarbleMac_PassGarbleMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4114DF1FC2434E855006211B /* Pods_PassGarbleMac_PassGarbleMacUITests.framework */; };
+		56874F3D2C8AE1389B8DB2C6 /* Pods_PassGarbleMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8517E1C966C37B7C38572BC /* Pods_PassGarbleMacTests.framework */; };
+		97AE155B5A40AE3D39BBEBD7 /* Pods_PassGarbleMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FF55426CBF8B68D9CC4A80 /* Pods_PassGarbleMac.framework */; };
 		C7F42CB327C148A800AD667A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F42CB227C148A800AD667A /* AppDelegate.swift */; };
 		C7F42CB527C148A800AD667A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F42CB427C148A800AD667A /* ViewController.swift */; };
 		C7F42CB727C148A900AD667A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F42CB627C148A900AD667A /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		C7F42CC527C148A900AD667A /* PassGarbleMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F42CC427C148A900AD667A /* PassGarbleMacTests.swift */; };
 		C7F42CCF27C148A900AD667A /* PassGarbleMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F42CCE27C148A900AD667A /* PassGarbleMacUITests.swift */; };
 		C7F42CD127C148A900AD667A /* PassGarbleMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F42CD027C148A900AD667A /* PassGarbleMacUITestsLaunchTests.swift */; };
-		D466AFC38C3377DC5FC45FEA /* Pods_PassGarbleMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFCD03625CD6DA17BE75B6F /* Pods_PassGarbleMacTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28FF55426CBF8B68D9CC4A80 /* Pods_PassGarbleMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassGarbleMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3489E65471995961CC842137 /* Pods-PassGarbleMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassGarbleMacTests.debug.xcconfig"; path = "Target Support Files/Pods-PassGarbleMacTests/Pods-PassGarbleMacTests.debug.xcconfig"; sourceTree = "<group>"; };
-		523A0D883AB48023519FE98F /* Pods_PassGarbleMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassGarbleMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4114DF1FC2434E855006211B /* Pods_PassGarbleMac_PassGarbleMacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassGarbleMac_PassGarbleMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D57D80844BD023E42DEE82 /* Pods-PassGarbleMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassGarbleMac.release.xcconfig"; path = "Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac.release.xcconfig"; sourceTree = "<group>"; };
-		5EFCD03625CD6DA17BE75B6F /* Pods_PassGarbleMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassGarbleMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D93C0353EC63A2119F6FA6 /* Pods-PassGarbleMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassGarbleMacTests.release.xcconfig"; path = "Target Support Files/Pods-PassGarbleMacTests/Pods-PassGarbleMacTests.release.xcconfig"; sourceTree = "<group>"; };
 		9034B20DD1CA97B9210E1459 /* Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig"; path = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5594D1B345CDFF1F0935483 /* Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig"; path = "Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B5B652838BB91C7AF1DA128B /* Pods_PassGarbleMac_PassGarbleMacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassGarbleMac_PassGarbleMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F42CAF27C148A800AD667A /* PassGarbleMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassGarbleMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F42CB227C148A800AD667A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F42CB427C148A800AD667A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		C7F42CCE27C148A900AD667A /* PassGarbleMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGarbleMacUITests.swift; sourceTree = "<group>"; };
 		C7F42CD027C148A900AD667A /* PassGarbleMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGarbleMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D937F3AB382B49E0EDE530C4 /* Pods-PassGarbleMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassGarbleMac.debug.xcconfig"; path = "Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac.debug.xcconfig"; sourceTree = "<group>"; };
+		E8517E1C966C37B7C38572BC /* Pods_PassGarbleMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassGarbleMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				491CF58B54DA07AB6A21336E /* Pods_PassGarbleMac.framework in Frameworks */,
+				97AE155B5A40AE3D39BBEBD7 /* Pods_PassGarbleMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D466AFC38C3377DC5FC45FEA /* Pods_PassGarbleMacTests.framework in Frameworks */,
+				56874F3D2C8AE1389B8DB2C6 /* Pods_PassGarbleMacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				329B71972BC0D38449ED6716 /* Pods_PassGarbleMac_PassGarbleMacUITests.framework in Frameworks */,
+				3569AB014B00A9D85BD2835F /* Pods_PassGarbleMac_PassGarbleMacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,9 +103,9 @@
 		C77E34AA27C28A7400D8F1EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				523A0D883AB48023519FE98F /* Pods_PassGarbleMac.framework */,
-				B5B652838BB91C7AF1DA128B /* Pods_PassGarbleMac_PassGarbleMacUITests.framework */,
-				5EFCD03625CD6DA17BE75B6F /* Pods_PassGarbleMacTests.framework */,
+				28FF55426CBF8B68D9CC4A80 /* Pods_PassGarbleMac.framework */,
+				4114DF1FC2434E855006211B /* Pods_PassGarbleMac_PassGarbleMacUITests.framework */,
+				E8517E1C966C37B7C38572BC /* Pods_PassGarbleMacTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,6 +172,7 @@
 				C7F42CAB27C148A800AD667A /* Sources */,
 				C7F42CAC27C148A800AD667A /* Frameworks */,
 				C7F42CAD27C148A800AD667A /* Resources */,
+				BEEA5E4AED6B1B030EDA441F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +210,7 @@
 				C7F42CC627C148A900AD667A /* Sources */,
 				C7F42CC727C148A900AD667A /* Frameworks */,
 				C7F42CC827C148A900AD667A /* Resources */,
+				5F2466D42A1781A5B6C34CFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,6 +356,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F2466D42A1781A5B6C34CFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac-PassGarbleMacUITests/Pods-PassGarbleMac-PassGarbleMacUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEEA5E4AED6B1B030EDA441F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMac/Pods-PassGarbleMac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -1,4 +1,5 @@
 import community.flock.passgarble.common.CommonPasswordGenerationOptions
+import kotlinx.coroutines.runBlocking
 
 
 var passwordGenerationOptions = CommonPasswordGenerationOptions()
@@ -6,16 +7,12 @@ var passwordGenerationOptions = CommonPasswordGenerationOptions()
 fun main() {
 
     printHelp()
-    val x = PassGarble()
-
-
+    val passGarble = PassGarble()
 
     do {
-        println(x.generate(passwordGenerationOptions))
+        println(runBlocking{passGarble.generate(passwordGenerationOptions)})
         takeNextUserInput()
     } while (true)
-
-
 }
 
 private fun takeNextUserInput() {

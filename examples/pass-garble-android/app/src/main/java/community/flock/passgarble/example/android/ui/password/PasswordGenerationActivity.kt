@@ -1,4 +1,4 @@
-package community.flock.passgarble.example.android.ui.login
+package community.flock.passgarble.example.android.ui.password
 
 import android.os.Bundle
 import android.text.Editable
@@ -7,13 +7,13 @@ import android.util.Log
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import community.flock.passgarble.common.PasswordGeneratorFactory
+import community.flock.passgarble.common.CommonPasswordGenerator
 import community.flock.passgarble.example.android.databinding.ActivityLoginBinding
+import kotlinx.coroutines.runBlocking
 
 class PasswordGenerationActivity() : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-    private val passwordGenerator = PasswordGeneratorFactory.createGenerator()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,14 +45,17 @@ class PasswordGenerationActivity() : AppCompatActivity() {
                         "special: $checkedSpecialChars"
             )
 
-            val generatedPassword = passwordGenerator.generate(
-                passwordLength = passLength,
-                includeLowerCase = checkedLowercase,
-                includeUpperCase = checkedUppercase,
-                includeNumbers = checkedNumbers,
-                includeSpecialChars = checkedSpecialChars
-            )
+            val generatedPassword = runBlocking {
+                CommonPasswordGenerator.generate(
+                    passwordLength = passLength,
+                    includeLowerCase = checkedLowercase,
+                    includeUpperCase = checkedUppercase,
+                    includeNumbers = checkedNumbers,
+                    includeSpecialChars = checkedSpecialChars
+                )
+            }
             generatedPasswordField.text = generatedPassword
+
         }
     }
 
