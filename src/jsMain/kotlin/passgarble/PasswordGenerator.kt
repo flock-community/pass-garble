@@ -20,7 +20,7 @@ class PasswordGenerator() {
     }
 
     private suspend fun generate(options: PasswordGenerationOptions): String {
-        return delegate.generate(
+        return CommonPasswordGenerator.generate(
             passwordLength = options.passwordLength,
             includeLowerCase = options.includeLowerCase,
             includeUpperCase = options.includeUpperCase,

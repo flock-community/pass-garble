@@ -7,7 +7,7 @@ import platform.Security.SecRandomCopyBytes
 import platform.Security.errSecSuccess
 import kotlin.coroutines.cancellation.CancellationException
 
-
+@OptIn(ExperimentalUnsignedTypes::class)
 @Throws(SecureRandomException::class, CancellationException::class)
 actual suspend fun getSecureRandomBytes(length: Int): UByteArray {
     val byteArray = ByteArray(length)
@@ -20,4 +20,7 @@ actual suspend fun getSecureRandomBytes(length: Int): UByteArray {
     } else {
         throw SecureRandomException("Could not securely retrieve $length number of bytes")
     }
+}
+
+internal actual fun writeLogMessage(message: String, logLevel: LogLevel) {
 }

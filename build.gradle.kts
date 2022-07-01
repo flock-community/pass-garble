@@ -5,7 +5,6 @@ plugins {
     kotlin("native.cocoapods") version "1.6.21"
     id("dev.petuska.npm.publish") version "2.1.2"
     id("maven-publish")
-    application
 }
 
 val passGarbleVersion = "0.0.2"
@@ -18,12 +17,23 @@ repositories {
 
 
 kotlin {
+    jvmToolchain {
+        (this as JavaToolchainSpec).languageVersion.set(JavaLanguageVersion.of("17")) // "8"
+    }
+
+    targets.all {
+        compilations.all {
+            kotlinOptions {
+                freeCompilerArgs = freeCompilerArgs + "-opt-in=kotlin.RequiresOptIn"
+            }
+        }
+    }
 
     jvm {
         compilations.all {
             kotlinOptions.jvmTarget = "11"
-
         }
+
         testRuns["test"].executionTask.configure {
             useJUnitPlatform()
         }
@@ -31,10 +41,10 @@ kotlin {
 
     }
 
+
+
+
     js(IR) {
-        compilations.all {
-            compileKotlinTask.kotlinOptions.freeCompilerArgs += listOf("-opt-in=kotlin.RequiresOptIn")
-        }
         binaries.library()
         browser {
             commonWebpackConfig {
@@ -42,30 +52,18 @@ kotlin {
             }
         }
     }
-    val hostOs = System.getProperty("os.name")
-    val isMingwX64 = hostOs.startsWith("Windows")
-    val nativeTarget = when {
-        hostOs == "Mac OS X" -> macosX64("native")
-        hostOs == "Linux" -> linuxX64("native")
-        isMingwX64 -> mingwX64("native")
-        else -> throw GradleException("Host OS is not supported in Kotlin/Native.")
-    }
 
     macosX64("native") {
         val main by compilations.getting {
             kotlinOptions {
-                freeCompilerArgs = freeCompilerArgs + "-Xbundle-id=PassGarble"
+                freeCompilerArgs = freeCompilerArgs + listOf("-Xbundle-id=PassGarble")
             }
         }
         binaries {
             framework {
                 baseName = "PassGarble"
-
-
             }
         }
-
-
     }
 
 
@@ -80,8 +78,6 @@ kotlin {
         // Configure the Pod name here instead of changing the Gradle project name
         name = "PassGarble"
 
-
-
         framework {
             baseName = "PassGarble"
             osx.deploymentTarget = "11.0"
@@ -91,7 +87,6 @@ kotlin {
             org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.DEBUG
         xcodeConfigurationToNativeBuildType["CUSTOM_RELEASE"] =
             org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE
-
     }
 
 
@@ -100,7 +95,6 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
             }
-
         }
         val commonTest by getting {
             dependencies {
@@ -110,6 +104,10 @@ kotlin {
         }
         val jvmMain by getting
         val jvmTest by getting
+
+
+
+
         val jsMain by getting {
             dependencies {
                 implementation("com.ionspin.kotlin:multiplatform-crypto-libsodium-bindings:0.8.6")
@@ -117,7 +115,17 @@ kotlin {
 
             }
         }
-        val jsTest by getting
+        val jsTest by getting {
+            dependencies {
+                implementation(kotlin("test-js"))
+
+            }
+        }
+
+
+
+
+
         val nativeMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.3.2")
@@ -165,10 +173,4 @@ npmPublishing {
 
         }
     }
-}
-
-
-
-application {
-    mainClass.set("MainKt")
 }

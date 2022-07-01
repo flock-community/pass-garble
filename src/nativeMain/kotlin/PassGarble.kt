@@ -9,7 +9,7 @@ class PassGarble() {
 
     suspend fun generate(
         generationOptions: CommonPasswordGenerationOptions
-    ): String = passwordGenerator.generate(generationOptions)
+    ): String = CommonPasswordGenerator.generate(generationOptions)
 
     suspend fun generate(
         passwordLength: Int,
@@ -19,7 +19,7 @@ class PassGarble() {
         includeSpecialChars: Boolean,
         specialCharsSet: List<Char>
     ): String {
-        return passwordGenerator.generate(
+        return CommonPasswordGenerator.generate(
             passwordLength = passwordLength,
             includeLowerCase = includeLowerCase,
             includeUpperCase = includeUpperCase,

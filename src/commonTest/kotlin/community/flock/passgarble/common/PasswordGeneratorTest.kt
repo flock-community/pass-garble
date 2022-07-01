@@ -12,9 +12,8 @@ internal class PasswordGeneratorTest {
 
     @Test
     fun whenUsingOnlyNumbers_passwordIsNumberOnly() = runTest {
-        val generator = CommonPasswordGenerator()
 
-        val generatedPassword = generator.generate(
+        val generatedPassword = CommonPasswordGenerator.generate(
             passwordLength = 10,
             includeNumbers = true,
             includeUpperCase = false,
@@ -28,8 +27,7 @@ internal class PasswordGeneratorTest {
 
     @Test
     fun whenUsingOnlyUpperAndLowerCase_passwordIsAsSuch() = runTest {
-        val generator = CommonPasswordGenerator()
-        val generatedPassword = generator.generate(
+        val generatedPassword = CommonPasswordGenerator.generate(
             passwordLength = 10,
             includeNumbers = false,
             includeUpperCase = true,
@@ -50,8 +48,7 @@ internal class PasswordGeneratorTest {
             includeLowerCase = false,
             includeSpecialChars = false
         )
-        val generator = CommonPasswordGenerator()
-        val exception = assertFails { generator.generate(options) }
+        val exception = assertFails { CommonPasswordGenerator.generate(options) }
 
         // Verify exception is hierarchically a runtime exception
         assertTrue { exception is RuntimeException }
@@ -78,9 +75,7 @@ internal class PasswordGeneratorTest {
         )
 
         testCases.forEach { (options, expected) ->
-            val generator = CommonPasswordGenerator()
-            assertTrue(expected.toRegex().containsMatchIn(generator.generate(options)),"$options was not $expected")
-
+            assertTrue(expected.toRegex().containsMatchIn(CommonPasswordGenerator.generate(options)),"$options was not $expected")
         }
     }
 
