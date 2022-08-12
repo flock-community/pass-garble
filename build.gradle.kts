@@ -1,10 +1,10 @@
-import org.jetbrains.kotlin.gradle.plugin.mpp.BitcodeEmbeddingMode
+import org.jetbrains.kotlin.gradle.plugin.mpp.Framework.BitcodeEmbeddingMode.BITCODE
 import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig.Mode
 
 plugins {
-    kotlin("multiplatform") version "1.6.21"
-    kotlin("native.cocoapods") version "1.6.21"
+    kotlin("multiplatform") version "1.7.10"
+    kotlin("native.cocoapods") version "1.7.10"
     id("dev.petuska.npm.publish") version "2.1.2"
     id("maven-publish")
 }
@@ -33,7 +33,7 @@ kotlin {
 
     jvm {
         compilations.all {
-            kotlinOptions.jvmTarget = "11"
+            kotlinOptions.jvmTarget = "17"
         }
 
         testRuns["test"].executionTask.configure {
@@ -64,6 +64,7 @@ kotlin {
         binaries {
             framework {
                 baseName = "PassGarble"
+
             }
         }
     }
@@ -80,13 +81,23 @@ kotlin {
         // Configure the Pod name here instead of changing the Gradle project name
         name = "PassGarble"
 
-        framework {
-            baseName = "PassGarble"
-            osx.deploymentTarget = "11.0"
+        podfile = project.file("examples/PassGarbleMac/Podfile")
 
+        framework {
+            // Required properties
+            // Framework name configuration. Use this property instead of deprecated 'frameworkName'
+            baseName = "PassGarbleBasename"
+
+            // Optional properties
+            // Dynamic framework support
+            isStatic = false
+            // Dependency export
+//            export(project(":anotherKMMModule"))
+            transitiveExport = false // This is default.
             // Bitcode embedding
-            embedBitcode(BitcodeEmbeddingMode.BITCODE)
+            embedBitcode(BITCODE)
         }
+
         // Maps custom Xcode configuration to NativeBuildType
         xcodeConfigurationToNativeBuildType["CUSTOM_DEBUG"] = NativeBuildType.DEBUG
         xcodeConfigurationToNativeBuildType["CUSTOM_RELEASE"] = NativeBuildType.RELEASE
@@ -109,8 +120,6 @@ kotlin {
         val jvmTest by getting
 
 
-
-
         val jsMain by getting {
             dependencies {
                 implementation("com.ionspin.kotlin:multiplatform-crypto-libsodium-bindings:0.8.6")
@@ -124,9 +133,6 @@ kotlin {
 
             }
         }
-
-
-
 
 
         val nativeMain by getting

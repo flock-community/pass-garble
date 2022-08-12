@@ -69,7 +69,8 @@ class PassGarbleCli : Callable<Int> {
                 passwordLength = length,
                 includeLowerCase = useLowercaseCharacters,
                 includeUpperCase = useUppercaseCharacters,
-                includeNumbers = useNumbers, includeSpecialChars = useSpecialCharacters
+                includeNumbers = useNumbers,
+                includeSpecialChars = useSpecialCharacters
             )
         }
 

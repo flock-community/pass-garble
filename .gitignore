@@ -33,7 +33,7 @@ hs_err_pid*
 *.iml
 
 # Generated iOS/macOS files
-PassGarble.podspec
+#PassGarble.podspec
 
 # node modules folder
 node_modules
