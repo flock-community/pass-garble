@@ -15,11 +15,11 @@ version = passGarbleCliVersion
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.6.21"
+    id("org.jetbrains.kotlin.jvm") version "1.7.10"
     java
     // Apply the application plugin to add support for building a CLI application in Java.
     application
-    kotlin("kapt") version "1.6.21"
+    kotlin("kapt") version "1.7.10"
     id("com.palantir.graal") version "0.10.0"
 
 }
