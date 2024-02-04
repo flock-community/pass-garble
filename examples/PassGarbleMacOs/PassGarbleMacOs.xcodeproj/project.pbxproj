@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C738482E28B8E6FC0069C0D9 /* Pods_PassGarbleMacOs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6947ABE9B96296609D57722 /* Pods_PassGarbleMacOs.framework */; };
+		C7EA9B3228A685E600475125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA9B3128A685E600475125 /* AppDelegate.swift */; };
+		C7EA9B3428A685E600475125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA9B3328A685E600475125 /* ViewController.swift */; };
+		C7EA9B3628A685E700475125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EA9B3528A685E700475125 /* Assets.xcassets */; };
+		C7EA9B3928A685E700475125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EA9B3728A685E700475125 /* Main.storyboard */; };
+		C7EA9B4428A685E800475125 /* PassGarbleMacOsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA9B4328A685E800475125 /* PassGarbleMacOsTests.swift */; };
+		C7EA9B4E28A685E800475125 /* PassGarbleMacOsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA9B4D28A685E800475125 /* PassGarbleMacOsUITests.swift */; };
+		C7EA9B5028A685E800475125 /* PassGarbleMacOsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EA9B4F28A685E800475125 /* PassGarbleMacOsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7EA9B4028A685E800475125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7EA9B2628A685E600475125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7EA9B2D28A685E600475125;
+			remoteInfo = PassGarbleMacOs;
+		};
+		C7EA9B4A28A685E800475125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7EA9B2628A685E600475125 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7EA9B2D28A685E600475125;
+			remoteInfo = PassGarbleMacOs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74D05E51F953008E7EF84F58 /* Pods-PassGarbleMacOs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassGarbleMacOs.debug.xcconfig"; path = "Target Support Files/Pods-PassGarbleMacOs/Pods-PassGarbleMacOs.debug.xcconfig"; sourceTree = "<group>"; };
+		9356E9B873C4C93BFE6E89C5 /* Pods-PassGarbleMacOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassGarbleMacOs.release.xcconfig"; path = "Target Support Files/Pods-PassGarbleMacOs/Pods-PassGarbleMacOs.release.xcconfig"; sourceTree = "<group>"; };
+		A6947ABE9B96296609D57722 /* Pods_PassGarbleMacOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassGarbleMacOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EA9B2E28A685E600475125 /* PassGarbleMacOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassGarbleMacOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EA9B3128A685E600475125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7EA9B3328A685E600475125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7EA9B3528A685E700475125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7EA9B3828A685E700475125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7EA9B3A28A685E700475125 /* PassGarbleMacOs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PassGarbleMacOs.entitlements; sourceTree = "<group>"; };
+		C7EA9B3F28A685E700475125 /* PassGarbleMacOsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassGarbleMacOsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EA9B4328A685E800475125 /* PassGarbleMacOsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGarbleMacOsTests.swift; sourceTree = "<group>"; };
+		C7EA9B4928A685E800475125 /* PassGarbleMacOsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassGarbleMacOsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EA9B4D28A685E800475125 /* PassGarbleMacOsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGarbleMacOsUITests.swift; sourceTree = "<group>"; };
+		C7EA9B4F28A685E800475125 /* PassGarbleMacOsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassGarbleMacOsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7EA9B2B28A685E600475125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C738482E28B8E6FC0069C0D9 /* Pods_PassGarbleMacOs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7EA9B3C28A685E700475125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7EA9B4628A685E800475125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0425D9C5CAC50EE41A7B6DBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74D05E51F953008E7EF84F58 /* Pods-PassGarbleMacOs.debug.xcconfig */,
+				9356E9B873C4C93BFE6E89C5 /* Pods-PassGarbleMacOs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4CF5E514F38EE7E7273E79BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6947ABE9B96296609D57722 /* Pods_PassGarbleMacOs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7EA9B2528A685E600475125 = {
+			isa = PBXGroup;
+			children = (
+				C7EA9B3028A685E600475125 /* PassGarbleMacOs */,
+				C7EA9B4228A685E800475125 /* PassGarbleMacOsTests */,
+				C7EA9B4C28A685E800475125 /* PassGarbleMacOsUITests */,
+				C7EA9B2F28A685E600475125 /* Products */,
+				0425D9C5CAC50EE41A7B6DBE /* Pods */,
+				4CF5E514F38EE7E7273E79BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C7EA9B2F28A685E600475125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA9B2E28A685E600475125 /* PassGarbleMacOs.app */,
+				C7EA9B3F28A685E700475125 /* PassGarbleMacOsTests.xctest */,
+				C7EA9B4928A685E800475125 /* PassGarbleMacOsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7EA9B3028A685E600475125 /* PassGarbleMacOs */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA9B3128A685E600475125 /* AppDelegate.swift */,
+				C7EA9B3328A685E600475125 /* ViewController.swift */,
+				C7EA9B3528A685E700475125 /* Assets.xcassets */,
+				C7EA9B3728A685E700475125 /* Main.storyboard */,
+				C7EA9B3A28A685E700475125 /* PassGarbleMacOs.entitlements */,
+			);
+			path = PassGarbleMacOs;
+			sourceTree = "<group>";
+		};
+		C7EA9B4228A685E800475125 /* PassGarbleMacOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA9B4328A685E800475125 /* PassGarbleMacOsTests.swift */,
+			);
+			path = PassGarbleMacOsTests;
+			sourceTree = "<group>";
+		};
+		C7EA9B4C28A685E800475125 /* PassGarbleMacOsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA9B4D28A685E800475125 /* PassGarbleMacOsUITests.swift */,
+				C7EA9B4F28A685E800475125 /* PassGarbleMacOsUITestsLaunchTests.swift */,
+			);
+			path = PassGarbleMacOsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7EA9B2D28A685E600475125 /* PassGarbleMacOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7EA9B5328A685E800475125 /* Build configuration list for PBXNativeTarget "PassGarbleMacOs" */;
+			buildPhases = (
+				2422BAD5B6FC0A035EFF2296 /* [CP] Check Pods Manifest.lock */,
+				C7EA9B2A28A685E600475125 /* Sources */,
+				C7EA9B2B28A685E600475125 /* Frameworks */,
+				C7EA9B2C28A685E600475125 /* Resources */,
+				C97444C0F6D856F91FD6A477 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassGarbleMacOs;
+			productName = PassGarbleMacOs;
+			productReference = C7EA9B2E28A685E600475125 /* PassGarbleMacOs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7EA9B3E28A685E700475125 /* PassGarbleMacOsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7EA9B5628A685E800475125 /* Build configuration list for PBXNativeTarget "PassGarbleMacOsTests" */;
+			buildPhases = (
+				C7EA9B3B28A685E700475125 /* Sources */,
+				C7EA9B3C28A685E700475125 /* Frameworks */,
+				C7EA9B3D28A685E700475125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7EA9B4128A685E800475125 /* PBXTargetDependency */,
+			);
+			name = PassGarbleMacOsTests;
+			productName = PassGarbleMacOsTests;
+			productReference = C7EA9B3F28A685E700475125 /* PassGarbleMacOsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7EA9B4828A685E800475125 /* PassGarbleMacOsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7EA9B5928A685E800475125 /* Build configuration list for PBXNativeTarget "PassGarbleMacOsUITests" */;
+			buildPhases = (
+				C7EA9B4528A685E800475125 /* Sources */,
+				C7EA9B4628A685E800475125 /* Frameworks */,
+				C7EA9B4728A685E800475125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7EA9B4B28A685E800475125 /* PBXTargetDependency */,
+			);
+			name = PassGarbleMacOsUITests;
+			productName = PassGarbleMacOsUITests;
+			productReference = C7EA9B4928A685E800475125 /* PassGarbleMacOsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7EA9B2628A685E600475125 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C7EA9B2D28A685E600475125 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C7EA9B3E28A685E700475125 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C7EA9B2D28A685E600475125;
+					};
+					C7EA9B4828A685E800475125 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C7EA9B2D28A685E600475125;
+					};
+				};
+			};
+			buildConfigurationList = C7EA9B2928A685E600475125 /* Build configuration list for PBXProject "PassGarbleMacOs" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7EA9B2528A685E600475125;
+			productRefGroup = C7EA9B2F28A685E600475125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7EA9B2D28A685E600475125 /* PassGarbleMacOs */,
+				C7EA9B3E28A685E700475125 /* PassGarbleMacOsTests */,
+				C7EA9B4828A685E800475125 /* PassGarbleMacOsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7EA9B2C28A685E600475125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EA9B3628A685E700475125 /* Assets.xcassets in Resources */,
+				C7EA9B3928A685E700475125 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7EA9B3D28A685E700475125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7EA9B4728A685E800475125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2422BAD5B6FC0A035EFF2296 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassGarbleMacOs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C97444C0F6D856F91FD6A477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMacOs/Pods-PassGarbleMacOs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMacOs/Pods-PassGarbleMacOs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassGarbleMacOs/Pods-PassGarbleMacOs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7EA9B2A28A685E600475125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EA9B3428A685E600475125 /* ViewController.swift in Sources */,
+				C7EA9B3228A685E600475125 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7EA9B3B28A685E700475125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EA9B4428A685E800475125 /* PassGarbleMacOsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7EA9B4528A685E800475125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EA9B5028A685E800475125 /* PassGarbleMacOsUITestsLaunchTests.swift in Sources */,
+				C7EA9B4E28A685E800475125 /* PassGarbleMacOsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7EA9B4128A685E800475125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7EA9B2D28A685E600475125 /* PassGarbleMacOs */;
+			targetProxy = C7EA9B4028A685E800475125 /* PBXContainerItemProxy */;
+		};
+		C7EA9B4B28A685E800475125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7EA9B2D28A685E600475125 /* PassGarbleMacOs */;
+			targetProxy = C7EA9B4A28A685E800475125 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7EA9B3728A685E700475125 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7EA9B3828A685E700475125 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7EA9B5128A685E800475125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		C7EA9B5228A685E800475125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		C7EA9B5428A685E800475125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D05E51F953008E7EF84F58 /* Pods-PassGarbleMacOs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PassGarbleMacOs/PassGarbleMacOs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flock.community.PassGarbleMacOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C7EA9B5528A685E800475125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9356E9B873C4C93BFE6E89C5 /* Pods-PassGarbleMacOs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PassGarbleMacOs/PassGarbleMacOs.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flock.community.PassGarbleMacOs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C7EA9B5728A685E800475125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flock.community.PassGarbleMacOsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassGarbleMacOs.app/Contents/MacOS/PassGarbleMacOs";
+			};
+			name = Debug;
+		};
+		C7EA9B5828A685E800475125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flock.community.PassGarbleMacOsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassGarbleMacOs.app/Contents/MacOS/PassGarbleMacOs";
+			};
+			name = Release;
+		};
+		C7EA9B5A28A685E800475125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flock.community.PassGarbleMacOsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PassGarbleMacOs;
+			};
+			name = Debug;
+		};
+		C7EA9B5B28A685E800475125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flock.community.PassGarbleMacOsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PassGarbleMacOs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7EA9B2928A685E600475125 /* Build configuration list for PBXProject "PassGarbleMacOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EA9B5128A685E800475125 /* Debug */,
+				C7EA9B5228A685E800475125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7EA9B5328A685E800475125 /* Build configuration list for PBXNativeTarget "PassGarbleMacOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EA9B5428A685E800475125 /* Debug */,
+				C7EA9B5528A685E800475125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7EA9B5628A685E800475125 /* Build configuration list for PBXNativeTarget "PassGarbleMacOsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EA9B5728A685E800475125 /* Debug */,
+				C7EA9B5828A685E800475125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7EA9B5928A685E800475125 /* Build configuration list for PBXNativeTarget "PassGarbleMacOsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EA9B5A28A685E800475125 /* Debug */,
+				C7EA9B5B28A685E800475125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7EA9B2628A685E600475125 /* Project object */;
+}

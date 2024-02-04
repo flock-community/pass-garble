@@ -6,15 +6,25 @@ target 'PassGarbleMac' do
   use_frameworks!
 
   # Pods for PassGarbleMac
-  pod 'PassGarble', :path => '../../'
+  pod 'pass_garble', :path => '../../'
 
-  target 'PassGarbleMacTests' do
-    inherit! :search_paths
-    # Pods for testing
+  #pod 'PassGarble', :git => 'https://github.com/flock-community/pass-garble.git'
+
+#  target 'PassGarbleMacTests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
+#
+#  target 'PassGarbleMacUITests' do
+#    # Pods for testing
+#  end
+
+end
+
+post_install do |installer| # src: https://stackoverflow.com/a/64139830/6003494
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
+    end
   end
-
-  target 'PassGarbleMacUITests' do
-    # Pods for testing
-  end
-
 end

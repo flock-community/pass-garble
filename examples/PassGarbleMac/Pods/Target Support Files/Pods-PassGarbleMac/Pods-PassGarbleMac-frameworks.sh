@@ -176,10 +176,10 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/../../../build/cocoapods/framework/PassGarble.framework"
+  install_framework "${PODS_ROOT}/../../../build/cocoapods/framework/PassGarbleMacOS.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/../../../build/cocoapods/framework/PassGarble.framework"
+  install_framework "${PODS_ROOT}/../../../build/cocoapods/framework/PassGarbleMacOS.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

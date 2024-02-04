@@ -1,16 +1,16 @@
 PODS:
-  - PassGarble (0.0.3-SNAPSHOT)
+  - pass_garble (0.0.3-SNAPSHOT)
 
 DEPENDENCIES:
-  - PassGarble (from `../../`)
+  - pass_garble (from `../../`)
 
 EXTERNAL SOURCES:
-  PassGarble:
+  pass_garble:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  PassGarble: da83f825aafcf008dcbf97488d15b5c3e440b74b
+  pass_garble: 961732f855781b92ee2940aaee1aad7da14dc167
 
-PODFILE CHECKSUM: d166dc30e2e448895cc3381be83048428612830f
+PODFILE CHECKSUM: f9044deced9091ae489675b11b2592bd4ba0caba
 
 COCOAPODS: 1.11.3

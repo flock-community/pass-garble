@@ -1,6 +1,0 @@
-framework module Pods_PassGarbleMacTests {
-  umbrella header "Pods-PassGarbleMacTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

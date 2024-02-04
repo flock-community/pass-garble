@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-import PassGarble
+import PassGarbleMacOS
 
 class ViewController: NSViewController {
     let passwordGenerator = PassGarble()

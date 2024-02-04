@@ -1,21 +1,21 @@
 {
   "name": "pass_garble",
-  "version": "0.0.2-SNAPSHOT",
-  "homepage": "https://github.com/JetBrains/kotlin",
+  "version": "0.0.3-SNAPSHOT",
+  "homepage": "https://github.com/flock-community/pass-garble",
   "source": {
     "http": ""
   },
   "authors": "",
   "license": "",
-  "summary": "CocoaPods test library",
-  "vendored_frameworks": "build/cocoapods/framework/PassGarble.framework",
+  "summary": "PassGarble - a kotlin multiplatform password generator",
+  "vendored_frameworks": "build/cocoapods/framework/PassGarbleMacOS.framework",
   "libraries": "c++",
   "platforms": {
     "osx": "11.0"
   },
   "pod_target_xcconfig": {
     "KOTLIN_PROJECT_PATH": ":",
-    "PRODUCT_MODULE_NAME": "PassGarble"
+    "PRODUCT_MODULE_NAME": "PassGarbleMacOS"
   },
   "script_phases": [
     {
